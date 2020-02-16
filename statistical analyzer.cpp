@@ -7,7 +7,7 @@ using namespace std;
 
 double Max,Min;
 
-void mainMenu();
+void main_menu();
 void unGroupMenu();
 void groupMenu();
 void unGroupToGroupMenu();
@@ -15,7 +15,9 @@ void regAndCorMenu();
 void probabilityMenu();
 void formulaSheetsMenu();
 double sum(double *data,int dataNum);
+double sum_square(double *Data,int dataNum);
 void max_min_calculator(double *Data);
+double qt_calculator(double *Data,int dataNum,int k);
 double mean_calculator(double* Data,int dataNum);
 double gmean_calculator(double* Data,int dataNum);
 double hmean_calculator(double *Data,int dataNum);
@@ -25,6 +27,7 @@ double variance_calculator(double *Data,int dataNum);
 
 double variance_calculator(double *Data,int dataNum)
 {
+    if(dataNum==1) return -1;
     double mean = mean_calculator(Data,dataNum);
     double Sum=0;
     for(int i=0;i<dataNum;i++)
@@ -36,6 +39,8 @@ double variance_calculator(double *Data,int dataNum)
 
 double mode_calculator(double *Data,int dataNum)
 {
+    if(dataNum==1) return 0.0;
+
    double maxValue = 0, maxCount = 0;
 
    for (int i=0;i<dataNum;i++)
@@ -52,6 +57,7 @@ double mode_calculator(double *Data,int dataNum)
          maxValue = Data[i];
       }
    }
+   if(maxCount==1) return 0.0;
    return maxValue;
 }
 
@@ -97,6 +103,28 @@ double mean_calculator(double *Data, int dataNum)
     return Sum/dataNum;
 }
 
+double qt_calculator(double *Data,int dataNum,int k)
+{
+
+    if(dataNum%2!=0)
+    {
+        int index = (k*(dataNum+1))/4;
+        int i = (dataNum+1)%4;
+
+        if(i==0)  return Data[index-1];
+        else return (Data[index-1]+Data[index])/2;
+    }
+    else
+    {
+        int index = (k*dataNum)/4;
+        int i=dataNum%4;
+
+        if(i==0) return (Data[index-1]+Data[index])/2;
+        else return Data[index];
+    }
+
+}
+
 void max_min_calculator(double *Data,int dataNum)
 {
     Max=Min=Data[0];
@@ -106,6 +134,16 @@ void max_min_calculator(double *Data,int dataNum)
         if(Max<Data[i]) Max=Data[i];
         if(Min>Data[i]) Min=Data[i];
     }
+}
+
+double sum_square(double *Data,int dataNum)
+{
+    double sumSQR=0;
+    for(int i=0;i<dataNum;i++)
+    {
+        sumSQR+=(Data[i]*Data[i]);
+    }
+    return sumSQR;
 }
 
 double sum(double *Data,int dataNum)
@@ -118,7 +156,7 @@ double sum(double *Data,int dataNum)
     return sum;
 }
 
-void print_Growing_sequence(double *Data,int dataNum)
+void Sort(double *Data,int dataNum)
 {
     for(int i=0;i<dataNum;i++)
     {
@@ -132,11 +170,6 @@ void print_Growing_sequence(double *Data,int dataNum)
             }
         }
     }
-
-    for(int i=0;i<dataNum;i++)
-    {
-        printf("%.2f  ",Data[i]);
-    }
 }
 
 void unGroupMenu()
@@ -144,52 +177,90 @@ void unGroupMenu()
     system("cls");
     int dataNum;
     double Sum,Mean,GMean,HMean,Median,Mode,Range,Variance,SD,PCS;
-    double *MaxMin;
 
-    printf("\n\n\n\n\t\t\t\t\t\t\tSAMPLE SIZE: ");
+    printf("\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
+    printf("\n\t\t\t\t\t\t\tENTER SAMPLE SIZE: ");
     scanf("%d",&dataNum);
 
-    double Data[dataNum];
+    double Data[dataNum],Data2[dataNum];
 
     printf("\n\t\t\t\t\t\t\tENTER %d VALUES WITH SPACE: ",dataNum);
     for(int i=0; i<dataNum; i++)
     {
         scanf("%lf",&Data[i]);
+        Data2[i]=Data[i];
     }
-
-    //print all data
-//    Sum = sum(Data,dataNum);
-//    max_min_calculator(Data,dataNum);
-//    Mean = mean_calculator(Data, dataNum);
-//    GMean = gmean_calculator(Data, dataNum);
-//    HMean = hmean_calculator(Data,dataNum);
-//    Median = median_calculator(Data,dataNum);
-//    Mode = mode_calculator(Data,dataNum);
-//    Range = Max-Min;
-//    Variance = variance_calculator(Data,dataNum);
 
     //print all values
     system("cls");
-    printf("\n\n\t\t\t\t\t\t-> SAMPLE SEQUENCE = ");   //print data sequence
+    printf("\n\n\n\n\n\n\n");
+    printf("\n\t\t\t\t\t\t\t-> SAMPLE SEQUENCE    = ");   //print data sequence
     for(int i=0;i<dataNum; i++)
     {
+        if(dataNum>10 && (i+1)%10==0) printf("\n\t\t\t\t\t\t\t                        ");
         printf("%.2f  ",Data[i]);
     }
-    printf("\n\t\t\t\t\t\t\t\t-> GROWING SEQUENCE = ");
-    print_Growing_sequence(Data,dataNum);
     printf("\n");
-    printf("\n\t\t\t\tSummation -> %.2f",sum(Data,dataNum));
-    max_min_calculator(Data,dataNum);
-    printf("\n\t\t\t\tHighest value -> %.2f",Max);
-    printf("\n\t\t\t\tLowest value -> %.2f",Min);
-    printf("\n\t\t\t\tMean -> %.2f",Mean);
-    printf("\n\t\t\t\tGeometric Mean -> %.2f",GMean);
-    printf("\n\t\t\t\tHarmonic Mean -> %.2f",HMean);
-    printf("\n\t\t\t\tMedian -> %.2f",Median);
-    printf("\n\t\t\t\tMode -> %.2f",Mode);
-    printf("\n\t\t\t\tRange -> %.2f",Range);
-    printf("\n\t\t\t\tVariance -> %.2f",Variance);
+    printf("\n\t\t\t\t\t\t\t-> GROWING SEQUENCE   = ");
+    Sort(Data2,dataNum);
+    for(int i=0;i<dataNum;i++)
+    {
+        if(dataNum>10 && (i+1)%10==0) printf("\n\t\t\t\t\t\t\t                        ");
+        printf("%.2f  ",Data[i]);
+    }
+    printf("\n");
 
+    printf("\n\t\t\t\t\t\t\t-> SAMPLE SIZE        = %d",dataNum);
+    printf("\n\t\t\t\t\t\t\t-> SUM OF X           = %.2f",sum(Data,dataNum));
+    printf("\n\t\t\t\t\t\t\t-> SUM OF SQUARE X    = %.2f",sum_square(Data,dataNum));
+    printf("\n");
+
+    max_min_calculator(Data,dataNum);
+    printf("\n\t\t\t\t\t\t\t-> MINIMUM VALUE      = %.2f",Min);
+    printf("\n\t\t\t\t\t\t\t-> 1st QUARTILE       = %.2f",qt_calculator(Data2,dataNum,1));
+    printf("\n\t\t\t\t\t\t\t-> MEDIAN             = %.2f",median_calculator(Data2,dataNum));
+    printf("\n\t\t\t\t\t\t\t-> 3rd QUARTILE       = %.2f",qt_calculator(Data2,dataNum,3));
+    printf("\n\t\t\t\t\t\t\t-> MAXIMUM VALUE      = %.2f",Max);
+    printf("\n\t\t\t\t\t\t\t-> RANGE              = %.2f",Max-Min);
+    printf("\n");
+
+    printf("\n\t\t\t\t\t\t\t-> MEAN (AVERAGE)     = %.2f",mean_calculator(Data,dataNum));
+    printf("\n\t\t\t\t\t\t\t-> GEOMETRIC MEAN     = %.2f",gmean_calculator(Data,dataNum));
+    printf("\n\t\t\t\t\t\t\t-> HARMONIC MEAN      = %.2f",hmean_calculator(Data,dataNum));
+    printf("\n\t\t\t\t\t\t\t-> MODE               = %.2f",mode_calculator(Data,dataNum));
+    Variance = variance_calculator(Data,dataNum);
+    if(Variance==-1) printf("\n\t\t\t\t\t\t\t-> VARIANCE OF X      = NaN");
+    else printf("\n\t\t\t\t\t\t\t-> VARIANCE OF X      = %.2f",Variance);
+    printf("\n\t\t\t\t\t\t\t-> STANDARD DEVIATION = %.2f",sqrt(Variance));
+
+    int choice;
+    printf("\n\n\n");
+
+    label:
+    printf("\n\t\t\t\t\t\t\t1.ANOTHER OPERATION\n\t\t\t\t\t\t\t2.MENU\n\t\t\t\t\t\t\t3.EXIT\n\t\t\t\t\t\t\t");
+    scanf("%d",&choice);
+
+    switch(choice)
+    {
+        case 1:
+        {
+            system("cls");
+            unGroupMenu();
+            break;
+        }
+        case 2:
+        {
+            system("cls");
+            main_menu();
+            break;
+        }
+        case 3: exit(0);
+        default:
+            {
+                printf("\n\t\t\t\t\t\t\tWRONG INPUT!!! TRY AGAIN.");
+                goto label;
+            }
+    }
 }
 
 void main_menu()
@@ -208,20 +279,19 @@ void main_menu()
 
     switch(choice)
     {
-        case 1: unGroupMenu();
-//        case 2: groupMenu();
-//        case 3: unGroupToGroupMenu();
-//        case 4: regAndCorMenu();
-//        case 5: probabilityMenu();
-//        case 6: formulaSheetsMenu();
+        case 1: {unGroupMenu(); break;}
+//        case 2: {groupMenu(); break;}
+//        case 3: {unGroupToGroupMenu(); break;}
+//        case 4: {regAndCorMenu(); break;}
+//        case 5: {probabilityMenu(); break;}
+//        case 6: {formulaSheetsMenu(); break;}
         case 7: exit(0);
         default:
-            {
-                printf("\nWrong Input.Try again.\n");
-                main_menu();
-            }
-
-
+        {
+            system("cls");
+            printf("\n\t\t\t\t\t\t\tWRONG INPUT!!! TRY AGAIN\n");
+            main_menu();
+        }
     }
 }
 
