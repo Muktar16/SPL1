@@ -176,7 +176,7 @@ void unGroupMenu()
 {
     system("cls");
     int dataNum;
-    double Sum,Mean,GMean,HMean,Median,Mode,Range,Variance,SD,PCS;
+    double Mean,Median,Variance;
 
     printf("\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
     printf("\n\t\t\t\t\t\t\tENTER SAMPLE SIZE: ");
@@ -206,7 +206,7 @@ void unGroupMenu()
     for(int i=0;i<dataNum;i++)
     {
         if(dataNum>10 && (i+1)%10==0) printf("\n\t\t\t\t\t\t\t                        ");
-        printf("%.2f  ",Data[i]);
+        printf("%.2f  ",Data2[i]);
     }
     printf("\n");
 
@@ -216,15 +216,17 @@ void unGroupMenu()
     printf("\n");
 
     max_min_calculator(Data,dataNum);
+    Median = median_calculator(Data2,dataNum);
     printf("\n\t\t\t\t\t\t\t-> MINIMUM VALUE      = %.2f",Min);
     printf("\n\t\t\t\t\t\t\t-> 1st QUARTILE       = %.2f",qt_calculator(Data2,dataNum,1));
-    printf("\n\t\t\t\t\t\t\t-> MEDIAN             = %.2f",median_calculator(Data2,dataNum));
+    printf("\n\t\t\t\t\t\t\t-> MEDIAN             = %.2f",Median);
     printf("\n\t\t\t\t\t\t\t-> 3rd QUARTILE       = %.2f",qt_calculator(Data2,dataNum,3));
     printf("\n\t\t\t\t\t\t\t-> MAXIMUM VALUE      = %.2f",Max);
     printf("\n\t\t\t\t\t\t\t-> RANGE              = %.2f",Max-Min);
     printf("\n");
 
-    printf("\n\t\t\t\t\t\t\t-> MEAN (AVERAGE)     = %.2f",mean_calculator(Data,dataNum));
+    Mean = mean_calculator(Data,dataNum);
+    printf("\n\t\t\t\t\t\t\t-> MEAN (AVERAGE)     = %.2f",Mean);
     printf("\n\t\t\t\t\t\t\t-> GEOMETRIC MEAN     = %.2f",gmean_calculator(Data,dataNum));
     printf("\n\t\t\t\t\t\t\t-> HARMONIC MEAN      = %.2f",hmean_calculator(Data,dataNum));
     printf("\n\t\t\t\t\t\t\t-> MODE               = %.2f",mode_calculator(Data,dataNum));
@@ -232,6 +234,11 @@ void unGroupMenu()
     if(Variance==-1) printf("\n\t\t\t\t\t\t\t-> VARIANCE OF X      = NaN");
     else printf("\n\t\t\t\t\t\t\t-> VARIANCE OF X      = %.2f",Variance);
     printf("\n\t\t\t\t\t\t\t-> STANDARD DEVIATION = %.2f",sqrt(Variance));
+    printf("\n\t\t\t\t\t\t\t-> STANDARD ERROR     = %.2f",sqrt(Variance)/sqrt(dataNum));
+    printf("\n");
+
+    printf("\n\t\t\t\t\t\t\t-> COEFFICIENT OF VARIANCE = %.2f\%",(sqrt(Variance)/Mean)*100);
+    printf("\n\t\t\t\t\t\t\t-> PEARSONS COEFFICIENT OF SKEWNESS = %.2f",(3*(Mean-Median))/sqrt(Variance));
 
     int choice;
     printf("\n\n\n");
