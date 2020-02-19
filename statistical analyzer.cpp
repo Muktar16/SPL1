@@ -2,7 +2,7 @@
 #include<math.h>
 #include<bits/stdc++.h>
 #include<stdlib.h>
-#include<conio.h>
+//#include<conio.h>
 using namespace std;
 
 double Max,Min;
@@ -24,7 +24,35 @@ double hmean_calculator(double *Data,int dataNum);
 double median_calculator(double* Data,int dataNum);
 double mode_calculator(double* Data,int dataNum);
 double variance_calculator(double *Data,int dataNum);
+void printFDtable(double **Class,int *F,int n);
 
+void printFDtable(double **Class,int *F,int n)
+{
+
+}
+
+void groupMenu()
+{
+    system("cls");
+    int n;
+    printf("\n\t\t\t\t\t\t\tEnter number of classes: ");
+    scanf("%d",&n);
+
+    double Class[n][n];
+    int F[n];
+    for(int i=0;i<n;i++)
+    {
+        printf("\n\t\t\t\t\t\t\tClass %d: ",i+1);
+        printf("\tLower Boundary-Upper Boundery: ");
+        scanf("%lf %lf",&Class[i][0],&Class[i][1]);
+        printf("\n\t\t\t\t\t\t\tFrequency: ");
+        scanf("%d",&F[i]);
+    }
+
+
+}
+
+//Ungrouped functions
 double variance_calculator(double *Data,int dataNum)
 {
     if(dataNum==1) return -1;
@@ -287,7 +315,7 @@ void main_menu()
     switch(choice)
     {
         case 1: {unGroupMenu(); break;}
-//        case 2: {groupMenu(); break;}
+        case 2: {groupMenu(); break;}
 //        case 3: {unGroupToGroupMenu(); break;}
 //        case 4: {regAndCorMenu(); break;}
 //        case 5: {probabilityMenu(); break;}
