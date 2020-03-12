@@ -1,0 +1,46 @@
+# depslib dependency file v1.0
+1583924410 source:c:\users\mukter\documents\c and c++\spl-1\spl-1\gmean_calculator.cpp
+	<math.h>
+
+1583929323 source:c:\users\mukter\documents\c and c++\spl-1\spl-1\groupmenu.cpp
+	<stdlib.h>
+	<iostream>
+	<stdio.h>
+
+1583924567 source:c:\users\mukter\documents\c and c++\spl-1\spl-1\hmean_calculator.cpp
+	"header.h"
+
+1583928948 c:\users\mukter\documents\c and c++\spl-1\spl-1\header.h
+
+1583929392 source:c:\users\mukter\documents\c and c++\spl-1\spl-1\main_function.cpp
+	<iostream>
+
+1583928529 source:c:\users\mukter\documents\c and c++\spl-1\spl-1\max_min_calculator.cpp
+	"header.h"
+	<stdlib.h>
+
+1583924278 source:c:\users\mukter\documents\c and c++\spl-1\spl-1\mean_calculator.cpp
+	"header.h"
+
+1583923958 source:c:\users\mukter\documents\c and c++\spl-1\spl-1\median_calculator.cpp
+
+1583926097 source:c:\users\mukter\documents\c and c++\spl-1\spl-1\mode_calculator.cpp
+
+1583924078 source:c:\users\mukter\documents\c and c++\spl-1\spl-1\qt_calculator.cpp
+
+1583921455 source:c:\users\mukter\documents\c and c++\spl-1\spl-1\sort.cpp
+
+1583921577 source:c:\users\mukter\documents\c and c++\spl-1\spl-1\sum.cpp
+
+1583921686 source:c:\users\mukter\documents\c and c++\spl-1\spl-1\sum_square.cpp
+
+1583928624 source:c:\users\mukter\documents\c and c++\spl-1\spl-1\ungroupmenu.cpp
+	<iostream>
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+	"header.h"
+
+1583926346 source:c:\users\mukter\documents\c and c++\spl-1\spl-1\variance_calculator.cpp
+	"header.h"
+
