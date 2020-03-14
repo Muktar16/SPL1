@@ -43,6 +43,7 @@
 		<Unit filename="mean_calculator.cpp" />
 		<Unit filename="median_calculator.cpp" />
 		<Unit filename="mode_calculator.cpp" />
+		<Unit filename="printFDtable.cpp" />
 		<Unit filename="qt_calculator.cpp" />
 		<Unit filename="sum.cpp" />
 		<Unit filename="sum_square.cpp" />

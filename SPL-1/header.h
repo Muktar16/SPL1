@@ -15,4 +15,5 @@ double mode_calculator(double *Data,int dataNum);
 double variance_calculator(double *Data,int dataNum);
 
 void groupMenu();
+void printFDtable(double *LB,double* UB,int *,int );
 
