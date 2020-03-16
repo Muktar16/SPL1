@@ -1,11 +1,12 @@
 #include<iostream>
 #include"header.h"
 #include<stdlib.h>
+#include<stdio.h>
+#include<conio.h>
 using namespace std;
 
 void main_menu()
 {
-
     int choice;
     cout<<"\n\t\t\t\t\t\t\t\tMAIN MENU\n\t\t\t\t\t\t\t     ===============\n\n"
         <<"\t\t\t\t\t\t\t1. UNGROUPED DATA\n"
@@ -29,9 +30,15 @@ void main_menu()
         case 7: exit(0);
         default:
         {
+            char c;
             system("cls||clear");
-            cout<<"\n\t\t\t\t\t\t\tWRONG INPUT!!! TRY AGAIN\n";
-            main_menu();
+            cout<<"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n";
+            cout<<"\n\t\t\t\t\t\t\tWRONG INPUT!!! YOU HAVE TO SELECT A NUMBER BETWEEN 1-7. \n";
+            cout<<"\n\n\t\t\t\t\t\t\tPress Any key to try again...............";
+            getch();
+            system("cls||clear");
+            cout<<"\n\n\n\n\n\n\n\n\n\n\n\n";
+            return;
         }
     }
 }

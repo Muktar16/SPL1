@@ -9,5 +9,9 @@ int main()
     cout<<"\t\t\t\t\t\t================================================\n";
     cout<<"\t\t\t\t\t\t\tWELCOME TO STATISTICAL CALCULATOR\n";
     cout<<"\t\t\t\t\t\t================================================\n\n\n";
-    main_menu();
+
+    while(1)
+    {
+        main_menu();
+    }
 }

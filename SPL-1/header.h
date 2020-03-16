@@ -16,4 +16,6 @@ double variance_calculator(double *Data,int dataNum);
 
 void groupMenu();
 void printFDtable(double *LB,double* UB,int *,int );
+void printFinalResults(double *LB,double* UB,int *F,int n);
+void printFrequencyPolygon(double *LB,double* UB,int *F,int n);
 

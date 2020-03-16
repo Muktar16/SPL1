@@ -1,5 +1,6 @@
 #include<iostream>
 #include<stdio.h>
+#include<conio.h>
 #include<stdlib.h>
 #include<math.h>
 #include"header.h"
@@ -18,7 +19,7 @@ void unGroupMenu()
 
     double Data[dataNum],Data2[dataNum];
 
-    printf("\n\t\t\t\t\t\t\tENTER %d VALUES WITH SPACE: ",dataNum);
+    printf("\n\t\t\t\t\t\t\tENTER EXACTLY %d VALUES WITH SPACE: ",dataNum);
     for(int i=0; i<dataNum; i++)
     {
         scanf("%lf",&Data[i]);
@@ -26,7 +27,7 @@ void unGroupMenu()
     }
 
     //print all values
-    system("cls");
+    system("cls||clear");
     printf("\n\n\n\n\n\n\n");
     printf("\n\t\t\t\t\t\t\t-> SAMPLE SEQUENCE    = ");   //print data sequence
     for(int i=0;i<dataNum; i++)
@@ -52,6 +53,7 @@ void unGroupMenu()
     double *Max_min;
     Max_min = max_min_calculator(Data,dataNum);
     Median = median_calculator(Data2,dataNum);
+
     printf("\n\t\t\t\t\t\t\t-> MINIMUM VALUE      = %.2f",Max_min[1]);
     printf("\n\t\t\t\t\t\t\t-> 1st QUARTILE       = %.2f",qt_calculator(Data2,dataNum,1));
     printf("\n\t\t\t\t\t\t\t-> MEDIAN             = %.2f",Median);
@@ -65,42 +67,86 @@ void unGroupMenu()
     printf("\n\t\t\t\t\t\t\t-> GEOMETRIC MEAN     = %.2f",gmean_calculator(Data,dataNum));
     printf("\n\t\t\t\t\t\t\t-> HARMONIC MEAN      = %.2f",hmean_calculator(Data,dataNum));
     printf("\n\t\t\t\t\t\t\t-> MODE               = %.2f",mode_calculator(Data,dataNum));
-    Variance = variance_calculator(Data,dataNum);
-    if(Variance==-1) printf("\n\t\t\t\t\t\t\t-> VARIANCE OF X      = NaN");
-    else printf("\n\t\t\t\t\t\t\t-> VARIANCE OF X      = %.2f",Variance);
-    printf("\n\t\t\t\t\t\t\t-> STANDARD DEVIATION = %.2f",sqrt(Variance));
-    printf("\n\t\t\t\t\t\t\t-> STANDARD ERROR     = %.2f",sqrt(Variance)/sqrt(dataNum));
-    printf("\n");
 
-    printf("\n\t\t\t\t\t\t\t-> COEFFICIENT OF VARIANCE = %.2f\%",(sqrt(Variance)/Mean)*100);
-    printf("\n\t\t\t\t\t\t\t-> PEARSONS COEFFICIENT OF SKEWNESS = %.2f",(3*(Mean-Median))/sqrt(Variance));
+    Variance = variance_calculator(Data,dataNum);
+    if(Variance==-1)
+    {
+        printf("\n\t\t\t\t\t\t\t-> VARIANCE OF X      = NaN");
+        printf("\n\t\t\t\t\t\t\t-> STANDARD DEVIATION = NaN");
+        printf("\n\t\t\t\t\t\t\t-> STANDARD ERROR     = NaN");
+        printf("\n");
+        printf("\n\t\t\t\t\t\t\t-> COEFFICIENT OF VARIANCE = NaN");
+        printf("\n\t\t\t\t\t\t\t-> PEARSONS COEFFICIENT OF SKEWNESS = NaN");
+    }
+    else
+    {
+        printf("\n\t\t\t\t\t\t\t-> VARIANCE OF X      = %.2f",Variance);
+        printf("\n\t\t\t\t\t\t\t-> STANDARD DEVIATION = %.2f",sqrt(Variance));
+        printf("\n\t\t\t\t\t\t\t-> STANDARD ERROR     = %.2f",sqrt(Variance)/sqrt(dataNum));
+        printf("\n");
+        printf("\n\t\t\t\t\t\t\t-> COEFFICIENT OF VARIANCE = %.2f\%",(sqrt(Variance)/Mean)*100);
+        printf("\n\t\t\t\t\t\t\t-> PEARSONS COEFFICIENT OF SKEWNESS = %.2f",(3*(Mean-Median))/sqrt(Variance));
+
+    }
 
     int choice;
     printf("\n\n\n");
 
-    label:
-    printf("\n\t\t\t\t\t\t\t1.ANOTHER OPERATION\n\t\t\t\t\t\t\t2.MENU\n\t\t\t\t\t\t\t3.EXIT\n\t\t\t\t\t\t\t");
-    scanf("%d",&choice);
-
-    switch(choice)
+    while(1)
     {
-        case 1:
+        printf("\n\t\t\t\t\t\t\t1.ANOTHER OPERATION\n\t\t\t\t\t\t\t2.BACK TO MAIN MENU\n\t\t\t\t\t\t\t3.EXIT\n\t\t\t\t\t\t\t");
+        scanf("%d",&choice);
+
+        switch(choice)
         {
-            system("cls");
-            unGroupMenu();
-            break;
-        }
-        case 2:
-        {
-            system("cls");
-            main_menu();
-            break;
-        }
-        case 3: exit(0);
-        default:
+            case 1:
             {
-                printf("\n\t\t\t\t\t\t\tWRONG INPUT!!! TRY AGAIN.");
-                goto label;
+                system("cls||clear");
+                unGroupMenu();
+                break;
             }
+            case 2:
+            {
+                system("cls||clear");
+                cout<<"\n\n\n\n\n\n\n\n\n";
+                return;
+            }
+            case 3: exit(0);
+            default:
+            {
+                system("cls||clear");
+                printf("\n\t\t\t\t\t\t\tWRONG INPUT!!! PRESS ANY KEY TRY AGAIN.");
+                getch();
+                system("cls||clear");
+            }
+
+        }
+
     }
+
+//    label:
+//    printf("\n\t\t\t\t\t\t\t1.ANOTHER OPERATION\n\t\t\t\t\t\t\t2.BACK TO MAIN MENU\n\t\t\t\t\t\t\t3.EXIT\n\t\t\t\t\t\t\t");
+//    scanf("%d",&choice);
+//
+//    switch(choice)
+//    {
+//        case 1:
+//        {
+//            system("cls||clear");
+//            unGroupMenu();
+//            break;
+//        }
+//        case 2:
+//        {
+//            system("cls||clear");
+//            cout<<"\n\n\n\n\n\n\n\n\n";
+//            return;
+//        }
+//        case 3: exit(0);
+//        default:
+//            {
+//                printf("\n\t\t\t\t\t\t\tWRONG INPUT!!! TRY AGAIN.");
+//                goto label;
+//            }
+//    }
 }
