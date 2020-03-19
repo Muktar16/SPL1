@@ -5,7 +5,6 @@ using namespace std;
 
 void printFDtable(double *LB,double *UB,int *F,int n)
 {
-    system("cls||clear");
     double LCB[n],UCB[n],RF[n];
     int CF[n],Total=0;
     double MV[n];

@@ -50,7 +50,11 @@
 1583924567 source:c:\users\mukter\documents\c and c++\spl-1\hmean_calculator.cpp
 	"header.h"
 
-1584315068 c:\users\mukter\documents\c and c++\spl-1\header.h
+1584613517 c:\users\mukter\documents\c and c++\spl-1\header.h
+	<iostream>
+	<math.h>
+	<stdlib.h>
+	<stdio.h>
 
 1584226702 source:c:\users\mukter\documents\c and c++\spl-1\main_function.cpp
 	<iostream>
@@ -62,7 +66,7 @@
 	<stdio.h>
 	<conio.h>
 
-1583928529 source:c:\users\mukter\documents\c and c++\spl-1\max_min_calculator.cpp
+1584541302 source:c:\users\mukter\documents\c and c++\spl-1\max_min_calculator.cpp
 	"header.h"
 	<stdlib.h>
 
@@ -81,7 +85,7 @@
 
 1583921686 source:c:\users\mukter\documents\c and c++\spl-1\sum_square.cpp
 
-1584311956 source:c:\users\mukter\documents\c and c++\spl-1\ungroupmenu.cpp
+1584541582 source:c:\users\mukter\documents\c and c++\spl-1\ungroupmenu.cpp
 	<iostream>
 	<stdio.h>
 	<conio.h>
@@ -92,12 +96,12 @@
 1583926346 source:c:\users\mukter\documents\c and c++\spl-1\variance_calculator.cpp
 	"header.h"
 
-1584225057 source:c:\users\mukter\documents\c and c++\spl-1\printfdtable.cpp
+1584618253 source:c:\users\mukter\documents\c and c++\spl-1\printfdtable.cpp
 	<iostream>
 	<stdio.h>
 	<stdlib.h>
 
-1584315093 source:c:\users\mukter\documents\c and c++\spl-1\groupmenu.cpp
+1584618253 source:c:\users\mukter\documents\c and c++\spl-1\groupmenu.cpp
 	<stdlib.h>
 	<iostream>
 	<conio.h>
@@ -109,8 +113,20 @@
 	<stdlib.h>
 	<stdio.h>
 
-1584315181 source:c:\users\mukter\documents\c and c++\spl-1\printfinalresults.cpp
-	<iostream>
-	<stdio.h>
+1584617860 source:c:\users\mukter\documents\c and c++\spl-1\printfinalresults.cpp
+	"header.h"
+
+1584524782 source:c:\users\mukter\documents\c and c++\spl-1\group_gmean_calculator.cpp
+	<math.h>
+
+1584560618 source:c:\users\mukter\documents\c and c++\spl-1\group_mean_claculator.cpp
+
+1584561970 source:c:\users\mukter\documents\c and c++\spl-1\group_hmean_calculator.cpp
+
+1584616705 source:c:\users\mukter\documents\c and c++\spl-1\group_median_calculator.cpp
+
+1584617087 source:c:\users\mukter\documents\c and c++\spl-1\group_mode_calculator.cpp
+
+1584614164 source:c:\users\mukter\documents\c and c++\spl-1\group_variance_calculator.cpp
 	"header.h"
 

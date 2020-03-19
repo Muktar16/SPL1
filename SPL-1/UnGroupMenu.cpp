@@ -84,7 +84,7 @@ void unGroupMenu()
         printf("\n\t\t\t\t\t\t\t-> STANDARD DEVIATION = %.2f",sqrt(Variance));
         printf("\n\t\t\t\t\t\t\t-> STANDARD ERROR     = %.2f",sqrt(Variance)/sqrt(dataNum));
         printf("\n");
-        printf("\n\t\t\t\t\t\t\t-> COEFFICIENT OF VARIANCE = %.2f\%",(sqrt(Variance)/Mean)*100);
+        printf("\n\t\t\t\t\t\t\t-> COEFFICIENT OF VARIANCE = %.2f",(sqrt(Variance)/Mean)*100); cout<<"%";
         printf("\n\t\t\t\t\t\t\t-> PEARSONS COEFFICIENT OF SKEWNESS = %.2f",(3*(Mean-Median))/sqrt(Variance));
 
     }

@@ -30,28 +30,52 @@ void groupMenu()
         int ch;
         cout<<"\n\t\t\t\t\t\t\t\t1.Display Frequency Distribution Table"
             <<"\n\t\t\t\t\t\t\t\t2.Display Final Results"
-            <<"\n\t\t\t\t\t\t\t\t3.Display Frequency Polygon"
-            <<"\n\t\t\t\t\t\t\t\t3.Display Ogive"
+            <<"\n\t\t\t\t\t\t\t\t3.Display Frequency Distribution Table and Final Results"
+            <<"\n\t\t\t\t\t\t\t\t4.Display Frequency Polygon"
+            <<"\n\t\t\t\t\t\t\t\t5.Display Ogive"
+            <<"\n\t\t\t\t\t\t\t\t6.Back to Main Menu"
+            <<"\n\t\t\t\t\t\t\t\t7.Exit"
             <<"\n\n\t\t\t\t\t\t\t\tEnter your Choice: ";
         cin>>ch;
 
-        if(ch==1)
+        switch(ch)
         {
-            printFDtable(LB,UB,F,n);
-            cout<<"\n\t\t\t\t\t\t\t\tPress Any Key To Continue..............";
-            getch();
-        }
-        else if(ch==2)
-        {
-            printFinalResults(LB,UB,F,n);
-            cout<<"\n\t\t\t\t\t\t\t\tPress Any Key To Continue..............";
-            getch();
-        }
-        else if(ch==3)
-        {
-            //printFrequencyPolygon(LB,UB,F,n);
-            cout<<"\n\t\t\t\t\t\t\t\tPress Any Key To Continue..............";
-            getch();
+        case 1:
+            {
+                system("cls||clear");
+                printFDtable(LB,UB,F,n);
+                cout<<"\n\n\t\t\t\t\t\t\tPress Any Key To Continue..............";
+                getch();
+                break;
+            }
+        case 2:
+            {
+                system("cls||clear");
+                printf("\n\n\n\n\n\n\n\n\n");
+                printFinalResults(LB,UB,F,n);
+                cout<<"\n\n\t\t\t\t\t\t\tPress Any Key To Continue..............";
+                getch();
+                break;
+            }
+        case 3:
+            {
+                system("cls||clear");
+                printFDtable(LB,UB,F,n);
+                printf("\n\n\n");
+                printFinalResults(LB,UB,F,n);
+                cout<<"\n\n\t\t\t\t\t\t\tPress Any Key To Continue..............";
+                getch();
+                break;
+            }
+        case 6:
+            {
+                system("cls||clear");
+                return;
+            }
+        case 7:
+            {
+                exit(0);
+            }
         }
     }
 }

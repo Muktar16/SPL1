@@ -36,6 +36,12 @@
 		<Unit filename="Sort.cpp" />
 		<Unit filename="UnGroupMenu.cpp" />
 		<Unit filename="gmean_calculator.cpp" />
+		<Unit filename="group_gmean_calculator.cpp" />
+		<Unit filename="group_hmean_calculator.cpp" />
+		<Unit filename="group_mean_claculator.cpp" />
+		<Unit filename="group_median_calculator.cpp" />
+		<Unit filename="group_mode_calculator.cpp" />
+		<Unit filename="group_variance_calculator.cpp" />
 		<Unit filename="header.h" />
 		<Unit filename="main_function.cpp" />
 		<Unit filename="main_menu.cpp" />

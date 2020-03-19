@@ -1,4 +1,7 @@
-
+#include<iostream>
+#include<math.h>
+#include<stdlib.h>
+#include<stdio.h>
 
 void main_menu();
 void unGroupMenu();
@@ -17,5 +20,12 @@ double variance_calculator(double *Data,int dataNum);
 void groupMenu();
 void printFDtable(double *LB,double* UB,int *,int );
 void printFinalResults(double *LB,double* UB,int *F,int n);
+double group_mean_calculator(double *LB,double *UB,int *F,int n);
+double group_gmean_calculator(double *LB,double *UB,int *F,int n);
+double group_hmean_calculator(double *LB,double *UB,int *F,int n);
+double group_median_calculator(double *LB,double *UB,int *F,int n);
+double group_mode_calculator(double *LB,double *UB,int *F,int n);
+double group_variance_calculator(double *LB,double *UB,int *F,int n);
+
 void printFrequencyPolygon(double *LB,double* UB,int *F,int n);
 

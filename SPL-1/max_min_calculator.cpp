@@ -9,7 +9,7 @@ double* max_min_calculator(double *Data,int dataNum)
     for(int i=0;i<dataNum; i++)
     {
         if(max_min[0]<Data[i]) max_min[0]=Data[i];
-        if(max_min[1]>Data[i]) max_min[0]=Data[i];
+        if(max_min[1]>Data[i]) max_min[1]=Data[i];
     }
     return max_min;
 }
