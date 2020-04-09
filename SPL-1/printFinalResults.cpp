@@ -11,13 +11,15 @@ void printFinalResults(double* LB,double *UB,int* F,int n)
     }
     printf("\n\t\t\t\t\t\t\t-> NUMBER OF CLASSES  = %d",n);
     printf("\n\t\t\t\t\t\t\t-> TOTAL FREQUENCY    = %d",N);
+    printf("\n\t\t\t\t\t\t\t-> 1st QUARTILE       = %.2lf",group_median_calculator(LB,UB,F,n,1));
+    printf("\n\t\t\t\t\t\t\t-> 3rd QUARTILE       = %.2lf",group_median_calculator(LB,UB,F,n,3));
     printf("\n");
 
     double mean = group_mean_calculator(LB,UB,F,n);
     printf("\n\t\t\t\t\t\t\t-> MEAN (AVERAGE)     = %.2lf",mean);
     printf("\n\t\t\t\t\t\t\t-> GEOMETRIC MEAN     = %.2lf",group_gmean_calculator(LB,UB,F,n));
     printf("\n\t\t\t\t\t\t\t-> HARMONIC MEAN      = %.2lf",group_hmean_calculator(LB,UB,F,n));
-    double median = group_median_calculator(LB,UB,F,n);
+    double median = group_median_calculator(LB,UB,F,n,2);
     printf("\n\t\t\t\t\t\t\t-> MEDIAN             = %.2lf",median);
     printf("\n\t\t\t\t\t\t\t-> MODE               = %.2lf",group_mode_calculator(LB,UB,F,n));
     printf("\n");

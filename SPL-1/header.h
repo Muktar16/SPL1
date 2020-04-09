@@ -2,6 +2,11 @@
 #include<math.h>
 #include<stdlib.h>
 #include<stdio.h>
+#include<conio.h>
+using namespace std;
+
+
+void AltEnter();
 
 void main_menu();
 void unGroupMenu();
@@ -23,9 +28,17 @@ void printFinalResults(double *LB,double* UB,int *F,int n);
 double group_mean_calculator(double *LB,double *UB,int *F,int n);
 double group_gmean_calculator(double *LB,double *UB,int *F,int n);
 double group_hmean_calculator(double *LB,double *UB,int *F,int n);
-double group_median_calculator(double *LB,double *UB,int *F,int n);
+double group_median_calculator(double *LB,double *UB,int *F,int n,int q);
 double group_mode_calculator(double *LB,double *UB,int *F,int n);
 double group_variance_calculator(double *LB,double *UB,int *F,int n);
-
 void printFrequencyPolygon(double *LB,double* UB,int *F,int n);
 
+void unGroupToGroupMenu();
+void unGroupToGroupConverter(double* Data,double* LB,double* UB,int *F,int G,int N);
+
+void CoRelationAndRegressionMenu();
+void RegPrintResults(double *X,double *Y,double *XY ,int n);
+double sb1_calculator(double* X,double* Y,int n);
+
+void formulaSheetsMenu();
+void read_file(char *filename);

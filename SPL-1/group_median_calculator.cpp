@@ -1,5 +1,5 @@
 
-double group_median_calculator(double *LB,double *UB,int *F,int n)
+double group_median_calculator(double *LB,double *UB,int *F,int n,int q)
 {
     int N=0,cF[n];
     cF[-1]=0;
@@ -8,7 +8,7 @@ double group_median_calculator(double *LB,double *UB,int *F,int n)
         N+=F[i];
         cF[i]=cF[i-1]+F[i];
     }
-    double t = (double)N/2;
+    double t = (double)N*q/4;
 
 
     int m=0;

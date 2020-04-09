@@ -69,14 +69,14 @@ void unGroupMenu()
     printf("\n\t\t\t\t\t\t\t-> MODE               = %.2f",mode_calculator(Data,dataNum));
 
     Variance = variance_calculator(Data,dataNum);
-    if(Variance==-1)
+    if(Variance==0)
     {
-        printf("\n\t\t\t\t\t\t\t-> VARIANCE OF X      = NaN");
-        printf("\n\t\t\t\t\t\t\t-> STANDARD DEVIATION = NaN");
-        printf("\n\t\t\t\t\t\t\t-> STANDARD ERROR     = NaN");
+        printf("\n\t\t\t\t\t\t\t-> VARIANCE OF X      = 0");
+        printf("\n\t\t\t\t\t\t\t-> STANDARD DEVIATION = 0");
+        printf("\n\t\t\t\t\t\t\t-> STANDARD ERROR     = 0");
         printf("\n");
-        printf("\n\t\t\t\t\t\t\t-> COEFFICIENT OF VARIANCE = NaN");
-        printf("\n\t\t\t\t\t\t\t-> PEARSONS COEFFICIENT OF SKEWNESS = NaN");
+        printf("\n\t\t\t\t\t\t\t-> COEFFICIENT OF VARIANCE = 0");
+        printf("\n\t\t\t\t\t\t\t-> PEARSONS COEFFICIENT OF SKEWNESS = 0");
     }
     else
     {
@@ -103,7 +103,7 @@ void unGroupMenu()
             {
                 system("cls||clear");
                 unGroupMenu();
-                break;
+                return;
             }
             case 2:
             {
@@ -115,38 +115,13 @@ void unGroupMenu()
             default:
             {
                 system("cls||clear");
-                printf("\n\t\t\t\t\t\t\tWRONG INPUT!!! PRESS ANY KEY TRY AGAIN.");
+                printf("\n\t\t\t\t\t\t\tWRONG INPUT!!! PRESS ANY KEY TO TRY AGAIN.");
                 getch();
                 system("cls||clear");
             }
 
+
         }
 
     }
-
-//    label:
-//    printf("\n\t\t\t\t\t\t\t1.ANOTHER OPERATION\n\t\t\t\t\t\t\t2.BACK TO MAIN MENU\n\t\t\t\t\t\t\t3.EXIT\n\t\t\t\t\t\t\t");
-//    scanf("%d",&choice);
-//
-//    switch(choice)
-//    {
-//        case 1:
-//        {
-//            system("cls||clear");
-//            unGroupMenu();
-//            break;
-//        }
-//        case 2:
-//        {
-//            system("cls||clear");
-//            cout<<"\n\n\n\n\n\n\n\n\n";
-//            return;
-//        }
-//        case 3: exit(0);
-//        default:
-//            {
-//                printf("\n\t\t\t\t\t\t\tWRONG INPUT!!! TRY AGAIN.");
-//                goto label;
-//            }
-//    }
 }

@@ -1,0 +1,61 @@
+
+							   =====================================================
+							   ||      FORMULAE FOR PROBABILITY DISTRIBUTION      ||
+							   =====================================================
+
+
+									Binomial Distribution
+								      --------------------------
+								              ( n )
+								1. b(x;n,p) = (   ).(p^x).q^(n-x) 
+								              ( x )
+
+							      	2. mean = np
+								3. Variance = npq
+
+
+								         Poisson Distribution
+								     -----------------------------
+
+									           (u^x).e^(-u)
+								1. p(x;u) =   -----------------------
+											x!
+
+								2. mean = u
+								3. Variance = mean
+
+
+								        Geometric Distribution
+								    ------------------------------
+
+								1. g(x;p) = p.q^(x-1)
+								2. mean = (1/p)
+								3. variance = (1-p)/p^2
+
+
+								      Negative Binomial Distribution
+								----------------------------------------
+
+										( x-1 )
+								1. b*(x;n,p) =  (     ).(p^k).q^(x-k)
+										( k-1 )
+
+								2. mean = (k / p)
+
+								3. variance = k(1-p)/p^2
+
+
+								       Hypergeometric Distribution
+								-----------------------------------------
+
+										   ( k )  ( N-k )
+ 										   (   ). (     )
+										   ( x )  ( n-x )
+								1. h(x;N,n,k) = ---------------------
+											( N )
+											(   )
+											( n )
+								2. mean = (nk/N)
+										  np(1-p)(N-n)
+								3. variance =  ------------------
+										     (N-1)

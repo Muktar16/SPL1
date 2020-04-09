@@ -23,10 +23,10 @@ void main_menu()
     {
         case 1: {unGroupMenu(); break;}
         case 2: {groupMenu(); break;}
-//        case 3: {unGroupToGroupMenu(); break;}
-//        case 4: {regAndCorMenu(); break;}
+        case 3: {unGroupToGroupMenu(); break;}
+        case 4: {CoRelationAndRegressionMenu(); break;}
 //        case 5: {probabilityMenu(); break;}
-//        case 6: {formulaSheetsMenu(); break;}
+        case 6: {formulaSheetsMenu(); break;}
         case 7: exit(0);
         default:
         {

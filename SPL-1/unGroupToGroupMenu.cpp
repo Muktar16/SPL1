@@ -1,34 +1,34 @@
-#include<stdlib.h>
-#include<iostream>
-#include<conio.h>
-#include<stdio.h>
 #include"header.h"
-using namespace std;
 
-
-void groupMenu()
+void unGroupToGroupMenu()
 {
     system("cls||clear");
-    int n;
-    cout<<"\n\n\t\t\t\t\t\t\t\tENTER NUMBER OF CLASSES: ";
-    cin>>n;
+    int N,G;
 
-    double LB[n],UB[n];
-    int F[n];
-    for(int i=0;i<n;i++)
+    printf("\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
+    printf("\n\t\t\t\t\t\t\tENTER SAMPLE SIZE: ");
+    scanf("%d",&N);
+
+    double Data[N];
+
+    printf("\n\t\t\t\t\t\t\tENTER EXACTLY %d VALUES WITH SPACE: ",N);
+    for(int i=0; i<N; i++)
     {
-        cout<<"\n\t\t\t\t\t\t\t\tClass "<<i+1<<":\n";
-        cout<<"\t\t\t\t\t\t\t\tEnter Lower Boundary and Upper Boundary (like: 10 15): ";
-        scanf("%lf %lf",&LB[i],&UB[i]);
-        printf("\t\t\t\t\t\t\t\tFrequency: ");
-        scanf("%d",&F[i]);
+        scanf("%lf",&Data[i]);
     }
+    printf("\n\t\t\t\t\t\t\tENTER NUMBER GROUPS: ");
+    scanf("%d",&G);
+
+    double LB[G],UB[G];
+    int F[G];
+
+    unGroupToGroupConverter(Data,LB,UB,F,G,N);
 
     while(1)
     {
         system("cls||clear");
-        printf("\n\n\n\n\n\n\n");
         int ch;
+        printf("\n\n\n\n\n\n\n\n");
         cout<<"\n\t\t\t\t\t\t\t\t1.Display Frequency Distribution Table"
             <<"\n\t\t\t\t\t\t\t\t2.Display Final Results"
             <<"\n\t\t\t\t\t\t\t\t3.Display Frequency Distribution Table and Final Results"
@@ -44,7 +44,7 @@ void groupMenu()
         case 1:
             {
                 system("cls||clear");
-                printFDtable(LB,UB,F,n);
+                printFDtable(LB,UB,F,G);
                 cout<<"\n\n\t\t\t\t\t\t\tPress Any Key To Continue..............";
                 getch();
                 break;
@@ -53,7 +53,7 @@ void groupMenu()
             {
                 system("cls||clear");
                 printf("\n\n\n\n\n\n\n\n\n");
-                printFinalResults(LB,UB,F,n);
+                printFinalResults(LB,UB,F,G);
                 cout<<"\n\n\t\t\t\t\t\t\tPress Any Key To Continue..............";
                 getch();
                 break;
@@ -61,9 +61,9 @@ void groupMenu()
         case 3:
             {
                 system("cls||clear");
-                printFDtable(LB,UB,F,n);
+                printFDtable(LB,UB,F,G);
                 printf("\n\n\n");
-                printFinalResults(LB,UB,F,n);
+                printFinalResults(LB,UB,F,G);
                 cout<<"\n\n\t\t\t\t\t\t\tPress Any Key To Continue..............";
                 getch();
                 break;
@@ -76,13 +76,6 @@ void groupMenu()
         case 7:
             {
                 exit(0);
-            }
-        default:
-            {
-                system("cls||clear");
-                printf("\n\n\n\t\t\t\t\t\t\tWRONG INPUT!!! PRESS ANY KEY TO TRY AGAIN......");
-                getch();
-                break;
             }
         }
     }

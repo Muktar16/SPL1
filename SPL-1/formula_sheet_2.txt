@@ -1,0 +1,50 @@
+							       
+
+							     ======================================
+							     ||     FORMULAE FOR GROUPED DATA    ||
+							     ======================================
+								
+								
+								           largest value - smallest value							
+					           1. Class Width =  -----------------------------------------
+								                  number of groups
+
+						                 sum of (fi.xi)
+					           2. Mean =  --------------------
+                                                                   sum of (fi)
+										    sum of [fi*log(xi)]
+					           3. Geometric Mean = Antilog (-----------------------------)
+										         sum of (fi)
+
+									      sum of (fi)
+						   4. Harmonic Mean =   ------------------------
+									     sum of (fi/xi)
+
+									  (fm - f1)
+					 	   5. Mode = L + ---------------------------- X h
+								     (fm - f1) + (fm - f2)
+										
+								          (N/2) - c.f          				
+					           6. Median  =  L + (-----------------) X h
+									       f
+							                sum of [fi.(xi - mean)^2]
+					           7. Variance =   -----------------------------------
+									       sum of (fi)
+
+						   8. Standard Deviation (SD) = root of variance
+
+										  root of (Variance)
+						   9. Standard Error = -------------------------------------------
+									  root of (total number of data values)
+
+									                 root of (Variance)
+						   10. Coefficient of variation  =   -------------------------- X 100%
+											        Mean
+
+											        3(mean - median)
+						   11. Pearson's Coefficienct of Skewness = ------------------------
+											       standard deviation
+									               
+										    (k.N/2) - c.f          				
+					           12. kth quartile Qk   =  L + (-------------------) X h
+											  f    

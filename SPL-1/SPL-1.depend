@@ -44,22 +44,26 @@
 1583926346 source:c:\users\mukter\documents\c and c++\spl-1\spl-1\variance_calculator.cpp
 	"header.h"
 
-1583924410 source:c:\users\mukter\documents\c and c++\spl-1\gmean_calculator.cpp
+1584810794 source:c:\users\mukter\documents\c and c++\spl-1\gmean_calculator.cpp
 	<math.h>
 
 1583924567 source:c:\users\mukter\documents\c and c++\spl-1\hmean_calculator.cpp
 	"header.h"
 
-1584613517 c:\users\mukter\documents\c and c++\spl-1\header.h
+1586222139 c:\users\mukter\documents\c and c++\spl-1\header.h
 	<iostream>
 	<math.h>
 	<stdlib.h>
 	<stdio.h>
+	<conio.h>
 
-1584226702 source:c:\users\mukter\documents\c and c++\spl-1\main_function.cpp
+1586226145 source:c:\users\mukter\documents\c and c++\spl-1\main_function.cpp
+	"header.h"
+	<windows.h>
+	<conio.h>
 	<iostream>
 
-1584309470 source:c:\users\mukter\documents\c and c++\spl-1\main_menu.cpp
+1585426670 source:c:\users\mukter\documents\c and c++\spl-1\main_menu.cpp
 	<iostream>
 	"header.h"
 	<stdlib.h>
@@ -85,7 +89,7 @@
 
 1583921686 source:c:\users\mukter\documents\c and c++\spl-1\sum_square.cpp
 
-1584541582 source:c:\users\mukter\documents\c and c++\spl-1\ungroupmenu.cpp
+1585645188 source:c:\users\mukter\documents\c and c++\spl-1\ungroupmenu.cpp
 	<iostream>
 	<stdio.h>
 	<conio.h>
@@ -93,7 +97,7 @@
 	<math.h>
 	"header.h"
 
-1583926346 source:c:\users\mukter\documents\c and c++\spl-1\variance_calculator.cpp
+1585157073 source:c:\users\mukter\documents\c and c++\spl-1\variance_calculator.cpp
 	"header.h"
 
 1584618253 source:c:\users\mukter\documents\c and c++\spl-1\printfdtable.cpp
@@ -101,19 +105,19 @@
 	<stdio.h>
 	<stdlib.h>
 
-1584618253 source:c:\users\mukter\documents\c and c++\spl-1\groupmenu.cpp
+1585746105 source:c:\users\mukter\documents\c and c++\spl-1\groupmenu.cpp
 	<stdlib.h>
 	<iostream>
 	<conio.h>
 	<stdio.h>
 	"header.h"
 
-1584315237 source:c:\users\mukter\documents\c and c++\spl-1\printfrequencypolygon.cpp
+1586133575 source:c:\users\mukter\documents\c and c++\spl-1\printfrequencypolygon.cpp
 	<iostream>
 	<stdlib.h>
 	<stdio.h>
 
-1584617860 source:c:\users\mukter\documents\c and c++\spl-1\printfinalresults.cpp
+1585746806 source:c:\users\mukter\documents\c and c++\spl-1\printfinalresults.cpp
 	"header.h"
 
 1584524782 source:c:\users\mukter\documents\c and c++\spl-1\group_gmean_calculator.cpp
@@ -123,10 +127,37 @@
 
 1584561970 source:c:\users\mukter\documents\c and c++\spl-1\group_hmean_calculator.cpp
 
-1584616705 source:c:\users\mukter\documents\c and c++\spl-1\group_median_calculator.cpp
+1585746447 source:c:\users\mukter\documents\c and c++\spl-1\group_median_calculator.cpp
 
 1584617087 source:c:\users\mukter\documents\c and c++\spl-1\group_mode_calculator.cpp
 
 1584614164 source:c:\users\mukter\documents\c and c++\spl-1\group_variance_calculator.cpp
+	"header.h"
+
+1585789951 source:c:\users\mukter\documents\c and c++\spl-1\ungrouptogroupmenu.cpp
+	"header.h"
+
+1584768594 source:c:\users\mukter\documents\c and c++\spl-1\ungrouptogroupconverter.cpp
+	"header.h"
+
+1585166544 source:c:\users\mukter\documents\c and c++\spl-1\regprintresults.cpp
+	"header.h"
+
+1585165433 source:c:\users\mukter\documents\c and c++\spl-1\corelationandregressionmenu.cpp
+	"header.h"
+
+1585162456 source:c:\users\mukter\documents\c and c++\spl-1\sb1_calculator.cpp
+	"header.h"
+
+1585404627 source:c:\users\mukter\documents\c and c++\spl-1\probabilitymenu.cpp
+	"header.h"
+
+1586162227 source:c:\users\mukter\documents\c and c++\spl-1\formulasheetsmenu.cpp
+	"header.h"
+
+1586153420 source:c:\users\mukter\documents\c and c++\spl-1\ungroupsheets.cpp
+	"header.h"
+
+1586153548 source:c:\users\mukter\documents\c and c++\spl-1\read_file.cpp
 	"header.h"
 

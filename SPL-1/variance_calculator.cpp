@@ -2,7 +2,7 @@
 
 double variance_calculator(double *Data,int dataNum)
 {
-    if(dataNum==1) return -1;
+    if(dataNum==1) return 0;
     double mean = mean_calculator(Data,dataNum);
     double Sum=0;
     for(int i=0;i<dataNum;i++)
