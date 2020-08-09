@@ -27,7 +27,7 @@ void groupMenu()
     while(1)
     {
         system("cls||clear");
-        printf("\n\n\n\n\n\n\n");
+        printf("\n\n\n\n\n\n\n\n\n\n\n\n\n");
         int ch;
         cout<<"\n\t\t\t\t\t\t\t\t1.Display Frequency Distribution Table"
             <<"\n\t\t\t\t\t\t\t\t2.Display Final Results"
@@ -46,7 +46,7 @@ void groupMenu()
                 system("cls||clear");
                 printFDtable(LB,UB,F,n);
                 cout<<"\n\n\t\t\t\t\t\t\tPress Any Key To Continue..............";
-                getch();
+                _getch();
                 break;
             }
         case 2:
@@ -55,7 +55,7 @@ void groupMenu()
                 printf("\n\n\n\n\n\n\n\n\n");
                 printFinalResults(LB,UB,F,n);
                 cout<<"\n\n\t\t\t\t\t\t\tPress Any Key To Continue..............";
-                getch();
+                _getch();
                 break;
             }
         case 3:
@@ -64,13 +64,30 @@ void groupMenu()
                 printFDtable(LB,UB,F,n);
                 printf("\n\n\n");
                 printFinalResults(LB,UB,F,n);
-                cout<<"\n\n\t\t\t\t\t\t\tPress Any Key To Continue..............";
-                getch();
+                cout<<"\n\n\n\t\t\t\t\t\t\tPress Any Key To Continue..............";
+                _getch();
                 break;
             }
+        case 4:
+            {
+                system("cls||clear");
+                printFrequencyPolygon(LB,UB,F,n);
+                cout<<"\n\n\n\t\t\t\t\t\t\tPress Any Key To Continue..............";
+                _getch();
+                break;
+            }
+        case 5:
+        {
+            system("cls||clear");
+            //printOgive(LB,UB,F,n);
+            cout<<"\n\n\n\t\t\t\t\t\t\tPress Any Key To Continue..............";
+            _getch();
+            break;
+        }
         case 6:
             {
                 system("cls||clear");
+                printf("\n\n\n");
                 return;
             }
         case 7:
@@ -80,8 +97,8 @@ void groupMenu()
         default:
             {
                 system("cls||clear");
-                printf("\n\n\n\t\t\t\t\t\t\tWRONG INPUT!!! PRESS ANY KEY TO TRY AGAIN......");
-                getch();
+                printf("\n\n\n\n\n\n\n\n\n\n\n\t\t\t\t\t\t\tWRONG INPUT!!! PRESS ANY KEY TO TRY AGAIN......");
+                _getch();
                 break;
             }
         }

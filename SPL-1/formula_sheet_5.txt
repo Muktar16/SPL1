@@ -1,0 +1,200 @@
+                                                             
+                                                             ======================================
+							     ||    FORMULAE FOR UNGROUPED DATA   ||
+							     ======================================
+								
+								
+								            k(N + 1)							
+						    1. kth quartile Qk =   -----------  th term
+								                4
+								     sum of all data values
+					            2. Mean =  ------------------------------------
+                                                                   Total number of data values
+
+											  sum of log(x)
+						    3. Geometric Mean = Antilog (---------------------------------)
+										   Total number of data values
+
+									    total number of data values
+						    4. Harmonic Mean =   ----------------------------------
+									            sum of (1/x)
+
+					            5. Mode = most repeated value from data
+										             1st Middle value + 2nd Middle value
+					            6. Median (even number of values) =   ------------------------------------------
+													      2				
+					            7. Median (odd number of values) =  middle value from data
+
+					            8. Range = largest value - smallest value
+
+									    sum of (x - mean)
+						    9. Variance   =   -------------------------------
+								          total number of values
+
+					           10. Standard Deviation (SD) = root of variance
+
+										    root of (Variance)
+						   11. Standard Error = -------------------------------------------
+								           root of (total number of data values)
+
+										       root of (Variance)
+						  12. Coefficient of variation =   -------------------------- X 100%
+											      Mean
+
+											       3(mean - median)
+						  13. Pearson's Coefficienct of Skewness = ------------------------
+											      standard deviation
+									     
+
+
+
+
+
+
+							       
+
+							     ======================================
+							     ||     FORMULAE FOR GROUPED DATA    ||
+							     ======================================
+								
+								
+								           largest value - smallest value							
+					           1. Class Width =  -----------------------------------------
+								                  number of groups
+
+						                 sum of (fi.xi)
+					           2. Mean =  --------------------
+                                                                   sum of (fi)
+										    sum of [fi*log(xi)]
+					           3. Geometric Mean = Antilog (-----------------------------)
+										         sum of (fi)
+
+									      sum of (fi)
+						   4. Harmonic Mean =   ------------------------
+									     sum of (fi/xi)
+
+									  (fm - f1)
+					 	   5. Mode = L + ---------------------------- X h
+								     (fm - f1) + (fm - f2)
+										
+								          (N/2) - c.f          				
+					           6. Median  =  L + (-----------------) X h
+									       f
+							                sum of [fi.(xi - mean)^2]
+					           7. Variance =   -----------------------------------
+									       sum of (fi)
+
+						   8. Standard Deviation (SD) = root of variance
+
+										  root of (Variance)
+						   9. Standard Error = -------------------------------------------
+									  root of (total number of data values)
+
+									                 root of (Variance)
+						   10. Coefficient of variation  =   -------------------------- X 100%
+											        Mean
+
+											        3(mean - median)
+						   11. Pearson's Coefficienct of Skewness = ------------------------
+											       standard deviation
+									               
+										    (k.N/2) - c.f          				
+					           12. kth quartile Qk   =  L + (-------------------) X h
+											  f    
+
+
+
+
+
+							========================================================
+							||      FORMULAE FOR REGRESSION & CORRELATION         ||
+							========================================================
+
+							
+							     sum of [(x - mean(x)) (y - mean(y))]
+						1. b =   --------------------------------------------
+							          sum of [(x - mean(x))^2]
+
+
+
+						2. a = mean(y) - b.mean(x)
+
+
+						3. equation of y on x = a - bx
+
+
+										              sum of [(x - mean(x)) (y - mean(y))]
+						4. Correlation coefficient(r) = -------------------------------------------------------------------
+										        root of [ sum of {(x - mean(x))^2 (y - mean(y))^2 }]
+
+
+						5. Coefficient of determination(r) = r^2.(100)
+
+
+											      n - 2
+						6. Significance test value = r X root of ( ------------)
+										             1 - r^2
+
+
+
+
+							   =====================================================
+							   ||      FORMULAE FOR PROBABILITY DISTRIBUTION      ||
+							   =====================================================
+
+
+									Binomial Distribution
+								      --------------------------
+								              ( n )
+								1. b(x;n,p) = (   ).(p^x).q^(n-x) 
+								              ( x )
+
+							      	2. mean = np
+								3. Variance = npq
+
+
+								         Poisson Distribution
+								     -----------------------------
+
+									           (u^x).e^(-u)
+								1. p(x;u) =   -----------------------
+											x!
+
+								2. mean = u
+								3. Variance = mean
+
+
+								        Geometric Distribution
+								    ------------------------------
+
+								1. g(x;p) = p.q^(x-1)
+								2. mean = (1/p)
+								3. variance = (1-p)/p^2
+
+
+								      Negative Binomial Distribution
+								----------------------------------------
+
+										( x-1 )
+								1. b*(x;n,p) =  (     ).(p^k).q^(x-k)
+										( k-1 )
+
+								2. mean = (k / p)
+
+								3. variance = k(1-p)/p^2
+
+
+								       Hypergeometric Distribution
+								-----------------------------------------
+
+										   ( k )  ( N-k )
+ 										   (   ). (     )
+										   ( x )  ( n-x )
+								1. h(x;N,n,k) = ---------------------
+											( N )
+											(   )
+											( n )
+								2. mean = (nk/N)
+										  np(1-p)(N-n)
+								3. variance =  ------------------
+										     (N-1)

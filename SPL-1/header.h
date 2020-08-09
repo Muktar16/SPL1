@@ -32,6 +32,7 @@ double group_median_calculator(double *LB,double *UB,int *F,int n,int q);
 double group_mode_calculator(double *LB,double *UB,int *F,int n);
 double group_variance_calculator(double *LB,double *UB,int *F,int n);
 void printFrequencyPolygon(double *LB,double* UB,int *F,int n);
+void printOgive(double *LB,double* UB,int *F,int n);
 
 void unGroupToGroupMenu();
 void unGroupToGroupConverter(double* Data,double* LB,double* UB,int *F,int G,int N);
@@ -39,6 +40,11 @@ void unGroupToGroupConverter(double* Data,double* LB,double* UB,int *F,int G,int
 void CoRelationAndRegressionMenu();
 void RegPrintResults(double *X,double *Y,double *XY ,int n);
 double sb1_calculator(double* X,double* Y,int n);
+
+void probabilityMenu();
+void bio_dis();
+int factorial(int n);
+void Hyper_geo_dis();
 
 void formulaSheetsMenu();
 void read_file(char *filename);

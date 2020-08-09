@@ -1,6 +1,5 @@
-
-
 #include<math.h>
+
 double gmean_calculator(double* Data,int dataNum)
 {
     double product=1,GMean;

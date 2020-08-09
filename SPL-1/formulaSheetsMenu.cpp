@@ -57,13 +57,7 @@ void formulaSheetsMenu()
             case 5:
             {
                 system("cls||clear");
-                read_file("formula_sheet_1.txt");
-                printf("\n\n\n\n\n\n");
-                read_file("formula_sheet_2.txt");
-                printf("\n\n\n\n\n\n");
-                read_file("formula_sheet_3.txt");
-                printf("\n\n\n\n\n\n");
-                read_file("formula_sheet_4.txt");
+                read_file("formula_sheet_5.txt");
                 cout<<"\n\n\t\t\t\t\t\t\tPress Any Key To Continue..............";
                 _getch();
                 break;
@@ -74,7 +68,7 @@ void formulaSheetsMenu()
                 cout<<"\n\n\n\n\n\n\n\n\n\n\n";
                 return;
             }
-    //        case 7: exit(0);
+            case 7: exit(0);
             default:
             {
                 system("cls||clear");

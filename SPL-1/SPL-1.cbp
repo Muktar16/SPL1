@@ -34,9 +34,12 @@
 		<Unit filename="CoRelationAndRegressionMenu.cpp" />
 		<Unit filename="GroupMenu.cpp" />
 		<Unit filename="Hmean_calculator.cpp" />
+		<Unit filename="Hyper_geo_dis.cpp" />
 		<Unit filename="RegPrintResults.cpp" />
 		<Unit filename="Sort.cpp" />
 		<Unit filename="UnGroupMenu.cpp" />
+		<Unit filename="bio_dis.cpp" />
+		<Unit filename="factorial.cpp" />
 		<Unit filename="formulaSheetsMenu.cpp" />
 		<Unit filename="gmean_calculator.cpp" />
 		<Unit filename="group_gmean_calculator.cpp" />

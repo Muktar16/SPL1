@@ -9,10 +9,8 @@
 								              ( n )
 								1. b(x;n,p) = (   ).(p^x).q^(n-x) 
 								              ( x )
-
 							      	2. mean = np
 								3. Variance = npq
-
 
 								         Poisson Distribution
 								     -----------------------------
@@ -20,7 +18,6 @@
 									           (u^x).e^(-u)
 								1. p(x;u) =   -----------------------
 											x!
-
 								2. mean = u
 								3. Variance = mean
 
@@ -32,7 +29,6 @@
 								2. mean = (1/p)
 								3. variance = (1-p)/p^2
 
-
 								      Negative Binomial Distribution
 								----------------------------------------
 
@@ -41,9 +37,7 @@
 										( k-1 )
 
 								2. mean = (k / p)
-
 								3. variance = k(1-p)/p^2
-
 
 								       Hypergeometric Distribution
 								-----------------------------------------

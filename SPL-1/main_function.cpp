@@ -22,11 +22,11 @@ void AltEnter()
 int main( void )
 {
     AltEnter();
-    //SetConsoleTitle("\n\n\n\nWELCOME TO STATISTICAL CALCULATOR");
+    SetConsoleTitle("\nSTATISTICAL CALCULATOR");
     cout<<"\n\n";
-    cout<<"\t\t\t\t\t\t================================================\n";
-    cout<<"\t\t\t\t\t\t\tWELCOME TO STATISTICAL CALCULATOR\n";
-    cout<<"\t\t\t\t\t\t================================================\n\n\n";
+    cout<<"\t\t\t\t\t\t\t================================================\n";
+    cout<<"\t\t\t\t\t\t\t\tWELCOME TO STATISTICAL CALCULATOR\n";
+    cout<<"\t\t\t\t\t\t\t================================================\n\n\n";
 
     while(1)
     {

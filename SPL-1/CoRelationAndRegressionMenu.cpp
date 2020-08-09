@@ -57,12 +57,10 @@ void CoRelationAndRegressionMenu()
             {
                 system("cls||clear");
                 printf("\n\t\t\t\t\t\t\tWRONG INPUT!!! PRESS ANY KEY TRY AGAIN.");
-                getch();
+                _getch();
                 system("cls||clear");
             }
 
         }
     }
-
-
 }

@@ -35,7 +35,7 @@ void unGroupMenu()
         if(dataNum>10 && (i+1)%10==0) printf("\n\t\t\t\t\t\t\t                        ");
         printf("%.2f  ",Data[i]);
     }
-    printf("\n");
+    //printf("\n");
     printf("\n\t\t\t\t\t\t\t-> GROWING SEQUENCE   = ");
     Sort(Data2,dataNum);
     for(int i=0;i<dataNum;i++)
@@ -116,7 +116,7 @@ void unGroupMenu()
             {
                 system("cls||clear");
                 printf("\n\t\t\t\t\t\t\tWRONG INPUT!!! PRESS ANY KEY TO TRY AGAIN.");
-                getch();
+                _getch();
                 system("cls||clear");
             }
 

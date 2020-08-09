@@ -46,7 +46,7 @@ void unGroupToGroupMenu()
                 system("cls||clear");
                 printFDtable(LB,UB,F,G);
                 cout<<"\n\n\t\t\t\t\t\t\tPress Any Key To Continue..............";
-                getch();
+                _getch();
                 break;
             }
         case 2:
@@ -55,7 +55,7 @@ void unGroupToGroupMenu()
                 printf("\n\n\n\n\n\n\n\n\n");
                 printFinalResults(LB,UB,F,G);
                 cout<<"\n\n\t\t\t\t\t\t\tPress Any Key To Continue..............";
-                getch();
+                _getch();
                 break;
             }
         case 3:
@@ -65,7 +65,7 @@ void unGroupToGroupMenu()
                 printf("\n\n\n");
                 printFinalResults(LB,UB,F,G);
                 cout<<"\n\n\t\t\t\t\t\t\tPress Any Key To Continue..............";
-                getch();
+                _getch();
                 break;
             }
         case 6:
