@@ -68,15 +68,20 @@ void bio_dis()
             }
         case 3:
             {
-                cout<<"\n\n\n\n";
-                for(int i=1;i<x;i++)
+                system("cls||clear");
+                double Prob=0;
+                cout<<"\n\n\n\n\n\n\t\t\t\t\t\tThe result of Binomial Distribution for x>"<<x<<", n="<<n<<", and p="<<p<<endl;
+                for(int i=0;i<x;i++)
                 {
                     b=(factorial(n)*pow(p,i)*pow(1-p,n-i))/(factorial(i)*factorial(n-i));
-                    cout<<"\n\t\t\t\t\t\t\t\t b("<<i<<";"<<n<<","<<p<<") = "<<b<<"\n";
+                    Prob+=b;
+                    cout<<"\n\t\t\t\t\t\t\t=> b("<<i<<";"<<n<<","<<p<<") = "<<b;
                 }
-                cout<<"\n\n\t\t\t\t\t\t\t\tMean = "<<mean;
-                cout<<"\n\t\t\t\t\t\t\t\tVariance = "<<variance;
-                cout<<"\n\t\t\t\t\t\t\t\tStandard Deviation = "<<sqrt(variance);
+                cout<<"\n\n\t\t\t\t\t\t\t=> P(x > "<<x<<" ) = "<<Prob;
+                cout<<"\n\n\t\t\t\t\t\t\t=> Mean = "<<mean;
+                cout<<"\n\t\t\t\t\t\t\t=> Variance = "<<variance;
+                cout<<"\n\t\t\t\t\t\t\t=> Standard Deviation = "<<sqrt(variance);
+                break;
             }
         case 4:
             {
