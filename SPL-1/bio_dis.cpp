@@ -40,13 +40,11 @@ void bio_dis()
         case 1:
             {
                 system("cls||clear");
-                b=(factorial(n)*pow(p,x)*pow(1-p,n-x))/(factorial(x)*factorial(n-x));
+                b=calculate_b(n,x,p);
+                //b=(factorial(n)*pow(p,x)*pow(1-p,n-x))/(factorial(x)*factorial(n-x));
                 cout<<"\n\n\n\n\n\n\t\t\t\t\t\tThe result of Binomial Distribution for x="<<x<<", n="<<n<<", and p="<<p<<endl;
                 cout<<"\n\n\t\t\t\t\t\t\t";
                 cout<<"=> b("<<x<<";"<<n<<","<<p<<") = "<<b;
-                cout<<"\n\n\t\t\t\t\t\t\t=> Mean = "<<mean;
-                cout<<"\n\t\t\t\t\t\t\t=> Variance = "<<variance;
-                cout<<"\n\t\t\t\t\t\t\t=> Standard Deviation = "<<sqrt(variance);
                 break;
             }
         case 2:
@@ -56,39 +54,65 @@ void bio_dis()
                 cout<<"\n\n\n\n\n\n\t\t\t\t\t\tThe result of Binomial Distribution for x>"<<x<<", n="<<n<<", and p="<<p<<endl;
                 for(int i=x+1;i<=n;i++)
                 {
-                    b=(factorial(n)*pow(p,i)*pow(1-p,n-i))/(factorial(i)*factorial(n-i));
+                    b=calculate_b(n,i,p);
                     Prob+=b;
                     cout<<"\n\t\t\t\t\t\t\t=> b("<<i<<";"<<n<<","<<p<<") = "<<b;
                 }
-                cout<<"\n\n\t\t\t\t\t\t\t=> P(x > "<<x<<" ) = "<<Prob;
-                cout<<"\n\n\t\t\t\t\t\t\t=> Mean = "<<mean;
-                cout<<"\n\t\t\t\t\t\t\t=> Variance = "<<variance;
-                cout<<"\n\t\t\t\t\t\t\t=> Standard Deviation = "<<sqrt(variance);
+                cout<<"\n\n\t\t\t\t\t\t\t=> P(x > "<<x<<") = "<<Prob;
                 break;
             }
         case 3:
             {
                 system("cls||clear");
                 double Prob=0;
-                cout<<"\n\n\n\n\n\n\t\t\t\t\t\tThe result of Binomial Distribution for x>"<<x<<", n="<<n<<", and p="<<p<<endl;
+                cout<<"\n\n\n\n\n\n\t\t\t\t\t\tThe result of Binomial Distribution for x<"<<x<<", n="<<n<<", and p="<<p<<endl;
                 for(int i=0;i<x;i++)
                 {
-                    b=(factorial(n)*pow(p,i)*pow(1-p,n-i))/(factorial(i)*factorial(n-i));
+                    b=calculate_b(n,i,p);
+                    //b=(factorial(n)*pow(p,i)*pow(1-p,n-i))/(factorial(i)*factorial(n-i));
                     Prob+=b;
                     cout<<"\n\t\t\t\t\t\t\t=> b("<<i<<";"<<n<<","<<p<<") = "<<b;
                 }
-                cout<<"\n\n\t\t\t\t\t\t\t=> P(x > "<<x<<" ) = "<<Prob;
-                cout<<"\n\n\t\t\t\t\t\t\t=> Mean = "<<mean;
-                cout<<"\n\t\t\t\t\t\t\t=> Variance = "<<variance;
-                cout<<"\n\t\t\t\t\t\t\t=> Standard Deviation = "<<sqrt(variance);
+                cout<<"\n\n\t\t\t\t\t\t\t=> P(x < "<<x<<") = "<<Prob;
                 break;
             }
         case 4:
             {
+                system("cls||clear");
+                double Prob=0;
+                cout<<"\n\n\n\n\n\n\t\t\t\t\t\tThe result of Binomial Distribution for x>="<<x<<", n="<<n<<", and p="<<p<<endl;
+                for(int i=x;i<=n;i++)
+                {
+                    b=calculate_b(n,i,p);
+                    //b=(factorial(n)*pow(p,i)*pow(1-p,n-i))/(factorial(i)*factorial(n-i));
+                    Prob+=b;
+                    cout<<"\n\t\t\t\t\t\t\t=> b("<<i<<";"<<n<<","<<p<<") = "<<b;
+                }
+                cout<<"\n\n\t\t\t\t\t\t\t=> P(x >= "<<x<<") = "<<Prob;
+                break;
+            }
 
+            case 5:
+            {
+                system("cls||clear");
+                double Prob=0;
+                cout<<"\n\n\n\n\n\n\t\t\t\t\t\tThe result of Binomial Distribution for x<="<<x<<", n="<<n<<", and p="<<p<<endl;
+                for(int i=0;i<=x;i++)
+                {
+                    b=calculate_b(n,i,p);
+                    //b=(factorial(n)*pow(p,i)*pow(1-p,n-i))/(factorial(i)*factorial(n-i));
+                    Prob+=b;
+                    cout<<"\n\t\t\t\t\t\t\t=> b("<<i<<";"<<n<<","<<p<<") = "<<b;
+                }
+                cout<<"\n\n\t\t\t\t\t\t\t=> P(x <= "<<x<<") = "<<Prob;
+
+                break;
             }
 
     }
+    cout<<"\n\n\t\t\t\t\t\t\t=> Mean = "<<mean;
+    cout<<"\n\t\t\t\t\t\t\t=> Variance = "<<variance;
+    cout<<"\n\t\t\t\t\t\t\t=> Standard Deviation = "<<sqrt(variance);
 
     cout<<"\n\n\n\t\t\t\t\t\tPress Any key to continue..........";
      _getch();

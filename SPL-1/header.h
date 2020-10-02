@@ -43,7 +43,7 @@ double sb1_calculator(double* X,double* Y,int n);
 
 void probabilityMenu();
 void bio_dis();
-int factorial(int n);
+double calculate_b(int n,int x,double p);
 void Hyper_geo_dis();
 
 void formulaSheetsMenu();
