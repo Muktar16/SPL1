@@ -25,6 +25,8 @@ void unGroupMenu()
         scanf("%lf",&Data[i]);
         Data2[i]=Data[i];
     }
+    char* s;
+    gets(s);
 
     //print all values
     system("cls||clear");

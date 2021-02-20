@@ -7,7 +7,8 @@ using namespace std;
 
 void main_menu()
 {
-    char choice;
+    char choice;//If int type and user input character unconsciously it will trouble
+    //Main menu
     printf("\n\n\n\n\n\n\n\n");
     cout<<"\n\t\t\t\t\t\t\t\t\tMAIN MENU\n\t\t\t\t\t\t\t\t     ===============\n\n"
         <<"\t\t\t\t\t\t\t\t1. UNGROUPED DATA\n"

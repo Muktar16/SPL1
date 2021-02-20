@@ -1,0 +1,32 @@
+1. 
+SQL> create or replace function get_area(radius in number) return number is
+   begin
+    return  3.14* radius*radius;
+  
+   end get_area;
+  /
+
+SQL> set serveroutput on;
+SQL> execute dbms_output.put_line(get_area(4))
+
+
+
+2.
+
+
+declare
+area  number;
+begin
+area :=get_area(4);
+dbms_output.put_line('The area is ' || area);
+end;
+/
+
+
+3.
+select get_area(4) from dual;
+
+
+4.
+EXECUTE dbms_output.put_line(get_area(100));
+
