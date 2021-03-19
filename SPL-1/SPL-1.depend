@@ -50,7 +50,7 @@
 1583924567 source:c:\users\mukter\documents\c and c++\spl-1\hmean_calculator.cpp
 	"header.h"
 
-1599351171 c:\users\mukter\documents\c and c++\spl-1\header.h
+1613832974 c:\users\mukter\documents\c and c++\spl-1\header.h
 	<iostream>
 	<math.h>
 	<stdlib.h>
@@ -149,7 +149,7 @@
 1585162456 source:c:\users\mukter\documents\c and c++\spl-1\sb1_calculator.cpp
 	"header.h"
 
-1595437831 source:c:\users\mukter\documents\c and c++\spl-1\probabilitymenu.cpp
+1613839002 source:c:\users\mukter\documents\c and c++\spl-1\probabilitymenu.cpp
 	"header.h"
 
 1586920534 source:c:\users\mukter\documents\c and c++\spl-1\formulasheetsmenu.cpp
@@ -297,6 +297,6 @@
 1596961893 source:e:\c and c++\spl-1\factorial.cpp
 	"header.h"
 
-1601596274 source:c:\users\mukter\documents\c and c++\spl-1\calculate_b.cpp
+1613838468 source:c:\users\mukter\documents\c and c++\spl-1\calculate_b.cpp
 	"header.h"
 

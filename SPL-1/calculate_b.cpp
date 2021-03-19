@@ -11,5 +11,4 @@ double calculate_b(int n,int x,double p)
     nxf=tgamma(n-x+1);
 
     return (nf/xf)*((pow(p,x)*pow(1-p,n-x))/nxf);
-
 }

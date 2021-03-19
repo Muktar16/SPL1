@@ -43,6 +43,7 @@ double sb1_calculator(double* X,double* Y,int n);
 
 void probabilityMenu();
 void bio_dis();
+void pois_dis_p_given();
 double calculate_b(int n,int x,double p);
 void Hyper_geo_dis();
 
