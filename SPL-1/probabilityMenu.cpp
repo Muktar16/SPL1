@@ -22,7 +22,7 @@ void probabilityMenu()
         switch(choice)
         {
             case 1: {bio_dis(); break;}
-            case 2: {pois_dis_p_given(); break;}
+            //case 2: {pois_dis_p_given(); break;}
     //        case 3: {pois_disU(); break;}
     //        case 4: {geo_dis(); break;}
     //        case 5: {neg_bio_dis(); break;}

@@ -42,6 +42,7 @@
 		<Unit filename="calculate_b.cpp" />
 		<Unit filename="formulaSheetsMenu.cpp" />
 		<Unit filename="gmean_calculator.cpp" />
+		<Unit filename="graphMenu.cpp" />
 		<Unit filename="group_gmean_calculator.cpp" />
 		<Unit filename="group_hmean_calculator.cpp" />
 		<Unit filename="group_mean_claculator.cpp" />
@@ -68,9 +69,6 @@
 		<Unit filename="unGroupToGroupMenu.cpp" />
 		<Unit filename="variance_calculator.cpp" />
 		<Extensions>
-			<code_completion />
-			<envvars />
-			<debugger />
 			<lib_finder disable_auto="1" />
 		</Extensions>
 	</Project>

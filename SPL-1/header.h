@@ -47,5 +47,7 @@ void pois_dis_p_given();
 double calculate_b(int n,int x,double p);
 void Hyper_geo_dis();
 
+void graphMenu();
+
 void formulaSheetsMenu();
 void read_file(char *filename);

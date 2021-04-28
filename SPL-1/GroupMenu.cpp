@@ -88,6 +88,7 @@ void groupMenu()
             {
                 system("cls||clear");
                 printf("\n\n\n");
+                main_menu();
                 return;
             }
         case 7:
