@@ -8,6 +8,6 @@ void graphMenu()
 
     setcolor(YELLOW);
     rectangle(100,100,500,150);
-    outtextxy(110,115,"Frequency Polygon");
+    outtextxy(160,115,"Frequency Polygon");
 
 }

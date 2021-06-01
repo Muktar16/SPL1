@@ -60,7 +60,7 @@
 1616191951 source:c:\users\mukter\documents\c and c++\spl-1\main_function.cpp
 	"header.h"
 
-1619611214 source:c:\users\mukter\documents\c and c++\spl-1\main_menu.cpp
+1621274130 source:c:\users\mukter\documents\c and c++\spl-1\main_menu.cpp
 	<iostream>
 	<graphics.h>
 	<windows.h>
@@ -88,7 +88,7 @@
 
 1583921686 source:c:\users\mukter\documents\c and c++\spl-1\sum_square.cpp
 
-1619628981 source:c:\users\mukter\documents\c and c++\spl-1\ungroupmenu.cpp
+1621270208 source:c:\users\mukter\documents\c and c++\spl-1\ungroupmenu.cpp
 	<iostream>
 	<stdio.h>
 	<conio.h>
@@ -111,10 +111,11 @@
 	<stdio.h>
 	"header.h"
 
-1586749287 source:c:\users\mukter\documents\c and c++\spl-1\printfrequencypolygon.cpp
+1622477204 source:c:\users\mukter\documents\c and c++\spl-1\printfrequencypolygon.cpp
 	<iostream>
 	<stdlib.h>
 	<stdio.h>
+	<graphics.h>
 
 1585746806 source:c:\users\mukter\documents\c and c++\spl-1\printfinalresults.cpp
 	"header.h"
@@ -299,6 +300,6 @@
 1613838468 source:c:\users\mukter\documents\c and c++\spl-1\calculate_b.cpp
 	"header.h"
 
-1616193855 source:c:\users\mukter\documents\c and c++\spl-1\graphmenu.cpp
+1621274474 source:c:\users\mukter\documents\c and c++\spl-1\graphmenu.cpp
 	<graphics.h>
 

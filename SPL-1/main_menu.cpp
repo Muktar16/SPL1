@@ -75,6 +75,24 @@ void main_menu()
             delay(500);
             unGroupToGroupMenu();
         }
+        else if(x>=220&&x<=600 && y>=500&&y<=560)
+        {
+            closegraph();
+            delay(500);
+            formulaSheetsMenu();
+        }
+        else if(x>=780&&x<=1160 && y>=170&&y<=230)
+        {
+            closegraph();
+            delay(500);
+            CoRelationAndRegressionMenu();
+        }
+        else if(x>=780&&x<=1160 && y>=270&&y<=330)
+        {
+            closegraph();
+            delay(500);
+            probabilityMenu();
+        }
         else if(x>=780&&x<=1160 && y>=380&&y<=440)
         {
             closegraph();
