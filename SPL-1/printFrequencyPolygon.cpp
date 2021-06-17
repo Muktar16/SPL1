@@ -26,8 +26,11 @@ void printFrequencyPolygon(double *LB,double* UB,int *F,int n)
         MidPoint[i]=(LB[i]+UB[i])/2;
     }
 
-    line(150, 650, 950, 650);//x axis
     line(150, 650, 150, 50);//yaxis
+
+
+    line(150, 650, 950, 650);//x axis
+
     outtextxy(120,660,"0");
 
     double xunit=750/MidPoint[n-1];

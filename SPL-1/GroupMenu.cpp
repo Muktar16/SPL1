@@ -79,7 +79,7 @@ void groupMenu()
         case 5:
         {
             system("cls||clear");
-            //printOgive(LB,UB,F,n);
+            printOgive(LB,UB,F,n);
             cout<<"\n\n\n\t\t\t\t\t\t\tPress Any Key To Continue..............";
             _getch();
             break;
