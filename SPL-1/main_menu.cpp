@@ -1,19 +1,10 @@
-#include<iostream>
 #include<graphics.h>
-#include<windows.h>
 #include"header.h"
-#include<stdlib.h>
-#include<stdio.h>
-#include<conio.h>
-using namespace std;
+
 
 void main_menu()
 {
-
-    int heightOfScreen = GetSystemMetrics(SM_CXSCREEN);
-    int widthOfScreen = GetSystemMetrics(SM_CYSCREEN);
-
-    initwindow(heightOfScreen,widthOfScreen,"Statistical Analyzer",-3,-3);
+    initGraph("Msin Menu Window");
     settextstyle(10,HORIZ_DIR,5);
 
     setcolor(3);
@@ -22,7 +13,7 @@ void main_menu()
     outtextxy(580,80,"MAIN MENU");
     outtextxy(560,110,"-----------");
 
-    //setcolor(3);
+
     settextstyle(10,HORIZ_DIR,3);
     setcolor(8);
     rectangle(220,170,600,220);//ungrouped data
@@ -62,6 +53,7 @@ void main_menu()
             closegraph();
             delay(500);
             unGroupMenu();
+            break;
         }
         else if(x>=220&&x<=600 && y>=270&&y<=330)
         {

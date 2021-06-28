@@ -26,12 +26,9 @@ void printFrequencyPolygon(double *LB,double* UB,int *F,int n)
         MidPoint[i]=(LB[i]+UB[i])/2;
     }
 
+    line(150, 650, 950, 650);//x axis
     line(150, 650, 150, 50);//yaxis
 
-
-    line(150, 650, 950, 650);//x axis
-
-    outtextxy(120,660,"0");
 
     double xunit=750/MidPoint[n-1];
     double yunit=550/maxF;
@@ -65,6 +62,21 @@ void printFrequencyPolygon(double *LB,double* UB,int *F,int n)
         circle(points[i][0],points[i][1],5);
         if(i<n-1) line(points[i][0],points[i][1],points[i+1][0],points[i+1][1]);
     }
+    setcolor(GREEN);
+    outtextxy(120,660,"0");//(0,0) point of coordinate system
+
+    //making a exit button
+    rectangle(1000,300,1200,350);
+    setcolor(RED);
+    settextstyle(10,HORIZ_DIR,3);
+    outtextxy(1030,315,"Exit Graph");
+
+    POINT position;
+    if(GetKeyState(VK_LBUTTON)&0x8000)  GetCursorPos(&position);
+    int x1 = position.x;
+    int y1 = position.y;
+
+    if(x1>=1000&&x1<=1200 && y1>=300&&y1<=360)  closegraph();
 
 
 //    int y,maxF=0;

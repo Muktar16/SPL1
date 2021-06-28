@@ -7,9 +7,13 @@ using namespace std;
 
 
 void AltEnter();
+void initGraph(char *);
 
 void main_menu();
 void unGroupMenu();
+void getGrString(char *inputString);
+void newLine();
+void doCursor(int);
 void Sort(double *Data,int dataNum);
 double sum(double *Data,int dataNum);
 double sum_square(double *Data,int dataNum);

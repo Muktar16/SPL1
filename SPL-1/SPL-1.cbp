@@ -40,7 +40,9 @@
 		<Unit filename="UnGroupMenu.cpp" />
 		<Unit filename="bio_dis.cpp" />
 		<Unit filename="calculate_b.cpp" />
+		<Unit filename="doCursor.cpp" />
 		<Unit filename="formulaSheetsMenu.cpp" />
+		<Unit filename="getGrString.cpp" />
 		<Unit filename="gmean_calculator.cpp" />
 		<Unit filename="graphMenu.cpp" />
 		<Unit filename="group_gmean_calculator.cpp" />
@@ -56,10 +58,10 @@
 		<Unit filename="mean_calculator.cpp" />
 		<Unit filename="median_calculator.cpp" />
 		<Unit filename="mode_calculator.cpp" />
+		<Unit filename="newLine.cpp" />
 		<Unit filename="printFDtable.cpp" />
 		<Unit filename="printFinalResults.cpp" />
 		<Unit filename="printFrequencyPolygon.cpp" />
-		<Unit filename="printOgive.cpp" />
 		<Unit filename="probabilityMenu.cpp" />
 		<Unit filename="qt_calculator.cpp" />
 		<Unit filename="read_file.cpp" />

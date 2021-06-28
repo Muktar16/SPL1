@@ -2,8 +2,6 @@
 1583924410 source:c:\users\mukter\documents\c and c++\spl-1\spl-1\gmean_calculator.cpp
 	<math.h>
 
-1613838468 
-
 1583929323 source:c:\users\mukter\documents\c and c++\spl-1\spl-1\groupmenu.cpp
 	<stdlib.h>
 	<iostream>
@@ -52,7 +50,7 @@
 1583924567 source:c:\users\mukter\documents\c and c++\spl-1\hmean_calculator.cpp
 	"header.h"
 
-1616193325 c:\users\mukter\documents\c and c++\spl-1\header.h
+1624841245 c:\users\mukter\documents\c and c++\spl-1\header.h
 	<iostream>
 	<math.h>
 	<stdlib.h>
@@ -62,14 +60,9 @@
 1616191951 source:c:\users\mukter\documents\c and c++\spl-1\main_function.cpp
 	"header.h"
 
-1621274130 source:c:\users\mukter\documents\c and c++\spl-1\main_menu.cpp
-	<iostream>
+1624907884 source:c:\users\mukter\documents\c and c++\spl-1\main_menu.cpp
 	<graphics.h>
-	<windows.h>
 	"header.h"
-	<stdlib.h>
-	<stdio.h>
-	<conio.h>
 
 1584541302 source:c:\users\mukter\documents\c and c++\spl-1\max_min_calculator.cpp
 	"header.h"
@@ -90,13 +83,9 @@
 
 1583921686 source:c:\users\mukter\documents\c and c++\spl-1\sum_square.cpp
 
-1621270208 source:c:\users\mukter\documents\c and c++\spl-1\ungroupmenu.cpp
-	<iostream>
-	<stdio.h>
-	<conio.h>
-	<stdlib.h>
-	<math.h>
+1624913342 source:c:\users\mukter\documents\c and c++\spl-1\ungroupmenu.cpp
 	"header.h"
+	<graphics.h>
 
 1585157073 source:c:\users\mukter\documents\c and c++\spl-1\variance_calculator.cpp
 	"header.h"
@@ -113,13 +102,11 @@
 	<stdio.h>
 	"header.h"
 
-1622477204 source:c:\users\mukter\documents\c and c++\spl-1\printfrequencypolygon.cpp
+1622526274 source:c:\users\mukter\documents\c and c++\spl-1\printfrequencypolygon.cpp
 	<iostream>
 	<stdlib.h>
 	<stdio.h>
 	<graphics.h>
-
-1621274474 h>
 
 1585746806 source:c:\users\mukter\documents\c and c++\spl-1\printfinalresults.cpp
 	"header.h"
@@ -307,259 +294,16 @@
 1621274474 source:c:\users\mukter\documents\c and c++\spl-1\graphmenu.cpp
 	<graphics.h>
 
-1622508072 source:/Users/muktar/Desktop/SPL1-master/SPL-1/bio_dis.cpp
+1624822368 source:c:\users\mukter\documents\c and c++\spl-1\getgrstring.cpp
+	<graphics.h>
 	"header.h"
 
-1622508072 /Users/muktar/Desktop/SPL1-master/SPL-1/header.h
-	<iostream>
-	<math.h>
-	<stdlib.h>
-	<stdio.h>
-	<conio.h>
-
-1622508072 source:/Users/muktar/Desktop/SPL1-master/SPL-1/calculate_b.cpp
-	"header.h"
-
-1622508072 source:/Users/muktar/Desktop/SPL1-master/SPL-1/CoRelationAndRegressionMenu.cpp
-	"header.h"
-
-1622508072 source:/Users/muktar/Desktop/SPL1-master/SPL-1/formulaSheetsMenu.cpp
-	"header.h"
-
-1622508072 source:/Users/muktar/Desktop/SPL1-master/SPL-1/gmean_calculator.cpp
-	<math.h>
-
-1622508072 source:/Users/muktar/Desktop/SPL1-master/SPL-1/graphMenu.cpp
+1624822719 source:c:\users\mukter\documents\c and c++\spl-1\docursor.cpp
 	<graphics.h>
 
-1622508072 source:/Users/muktar/Desktop/SPL1-master/SPL-1/group_gmean_calculator.cpp
-	<math.h>
-
-1622508072 source:/Users/muktar/Desktop/SPL1-master/SPL-1/group_hmean_calculator.cpp
-
-1622508072 source:/Users/muktar/Desktop/SPL1-master/SPL-1/group_mean_claculator.cpp
-
-1622508072 source:/Users/muktar/Desktop/SPL1-master/SPL-1/group_median_calculator.cpp
-
-1622508072 source:/Users/muktar/Desktop/SPL1-master/SPL-1/group_mode_calculator.cpp
-
-1622508072 source:/Users/muktar/Desktop/SPL1-master/SPL-1/group_variance_calculator.cpp
-	"header.h"
-
-1622508072 source:/Users/muktar/Desktop/SPL1-master/SPL-1/GroupMenu.cpp
-	<stdlib.h>
-	<iostream>
-	<conio.h>
-	<stdio.h>
-	"header.h"
-
-1622508072 source:/Users/muktar/Desktop/SPL1-master/SPL-1/Hmean_calculator.cpp
-	"header.h"
-
-1622508072 source:/Users/muktar/Desktop/SPL1-master/SPL-1/Hyper_geo_dis.cpp
-	"header.h"
-
-1622508072 source:/Users/muktar/Desktop/SPL1-master/SPL-1/main_function.cpp
-	"header.h"
-
-1622508072 source:/Users/muktar/Desktop/SPL1-master/SPL-1/main_menu.cpp
-	<iostream>
-	<graphics.h>
-	<windows.h>
-	"header.h"
-	<stdlib.h>
-	<stdio.h>
-	<conio.h>
-
-1622508072 source:/Users/muktar/Desktop/SPL1-master/SPL-1/max_min_calculator.cpp
-	"header.h"
-	<stdlib.h>
-
-1622508072 source:/Users/muktar/Desktop/SPL1-master/SPL-1/mean_calculator.cpp
-	"header.h"
-
-1622508072 source:/Users/muktar/Desktop/SPL1-master/SPL-1/median_calculator.cpp
-
-1622508072 source:/Users/muktar/Desktop/SPL1-master/SPL-1/mode_calculator.cpp
-
-1622508072 source:/Users/muktar/Desktop/SPL1-master/SPL-1/printFDtable.cpp
-	<iostream>
-	<stdio.h>
-	<stdlib.h>
-
-1622508072 source:/Users/muktar/Desktop/SPL1-master/SPL-1/printFinalResults.cpp
-	"header.h"
-
-1622508072 source:/Users/muktar/Desktop/SPL1-master/SPL-1/printFrequencyPolygon.cpp
-	<iostream>
-	<stdlib.h>
-	<stdio.h>
+1624822719 source:c:\users\mukter\documents\c and c++\spl-1\newline.cpp
 	<graphics.h>
 
-1622508072 source:/Users/muktar/Desktop/SPL1-master/SPL-1/probabilityMenu.cpp
-	"header.h"
-
-1622508072 source:/Users/muktar/Desktop/SPL1-master/SPL-1/qt_calculator.cpp
-
-1622508072 source:/Users/muktar/Desktop/SPL1-master/SPL-1/read_file.cpp
-	"header.h"
-
-1622508072 source:/Users/muktar/Desktop/SPL1-master/SPL-1/RegPrintResults.cpp
-	"header.h"
-
-1622508072 source:/Users/muktar/Desktop/SPL1-master/SPL-1/sb1_calculator.cpp
-	"header.h"
-
-1622508072 source:/Users/muktar/Desktop/SPL1-master/SPL-1/Sort.cpp
-
-1622508072 source:/Users/muktar/Desktop/SPL1-master/SPL-1/sum.cpp
-
-1622508072 source:/Users/muktar/Desktop/SPL1-master/SPL-1/sum_square.cpp
-
-1622508072 source:/Users/muktar/Desktop/SPL1-master/SPL-1/UnGroupMenu.cpp
-	<iostream>
-	<stdio.h>
-	<conio.h>
-	<stdlib.h>
-	<math.h>
-	"header.h"
-
-1622508072 source:/Users/muktar/Desktop/SPL1-master/SPL-1/unGroupToGroupConverter.cpp
-	"header.h"
-
-1622508072 source:/Users/muktar/Desktop/SPL1-master/SPL-1/unGroupToGroupMenu.cpp
-	"header.h"
-
-1622508072 source:/Users/muktar/Desktop/SPL1-master/SPL-1/variance_calculator.cpp
-	"header.h"
-
-1622508072 source:\\mac\home\desktop\spl1-master\spl-1\bio_dis.cpp
-	"header.h"
-
-1622508072 \\mac\home\desktop\spl1-master\spl-1\header.h
-	<iostream>
-	<math.h>
-	<stdlib.h>
-	<stdio.h>
-	<conio.h>
-
-1622508072 source:\\mac\home\desktop\spl1-master\spl-1\calculate_b.cpp
-	"header.h"
-
-1622508072 source:\\mac\home\desktop\spl1-master\spl-1\corelationandregressionmenu.cpp
-	"header.h"
-
-1622508072 source:\\mac\home\desktop\spl1-master\spl-1\formulasheetsmenu.cpp
-	"header.h"
-
-1622508072 source:\\mac\home\desktop\spl1-master\spl-1\gmean_calculator.cpp
-	<math.h>
-
-1622508072 source:\\mac\home\desktop\spl1-master\spl-1\graphmenu.cpp
-	<graphics.h>
-
-1622508072 source:\\mac\home\desktop\spl1-master\spl-1\group_gmean_calculator.cpp
-	<math.h>
-
-1622508072 source:\\mac\home\desktop\spl1-master\spl-1\group_hmean_calculator.cpp
-
-1622508072 source:\\mac\home\desktop\spl1-master\spl-1\group_mean_claculator.cpp
-
-1622508072 source:\\mac\home\desktop\spl1-master\spl-1\group_median_calculator.cpp
-
-1622508072 source:\\mac\home\desktop\spl1-master\spl-1\group_mode_calculator.cpp
-
-1622508072 source:\\mac\home\desktop\spl1-master\spl-1\group_variance_calculator.cpp
-	"header.h"
-
-1623813394 source:\\mac\home\desktop\spl1-master\spl-1\groupmenu.cpp
-	<stdlib.h>
-	<iostream>
-	<conio.h>
-	<stdio.h>
-	"header.h"
-
-1622508072 source:\\mac\home\desktop\spl1-master\spl-1\hmean_calculator.cpp
-	"header.h"
-
-1622508072 source:\\mac\home\desktop\spl1-master\spl-1\hyper_geo_dis.cpp
-	"header.h"
-
-1622508072 source:\\mac\home\desktop\spl1-master\spl-1\main_function.cpp
-	"header.h"
-
-1622508072 source:\\mac\home\desktop\spl1-master\spl-1\main_menu.cpp
-	<iostream>
-	<graphics.h>
-	<windows.h>
-	"header.h"
-	<stdlib.h>
-	<stdio.h>
-	<conio.h>
-
-1622508072 source:\\mac\home\desktop\spl1-master\spl-1\max_min_calculator.cpp
-	"header.h"
-	<stdlib.h>
-
-1622508072 source:\\mac\home\desktop\spl1-master\spl-1\mean_calculator.cpp
-	"header.h"
-
-1622508072 source:\\mac\home\desktop\spl1-master\spl-1\median_calculator.cpp
-
-1622508072 source:\\mac\home\desktop\spl1-master\spl-1\mode_calculator.cpp
-
-1622508072 source:\\mac\home\desktop\spl1-master\spl-1\printfdtable.cpp
-	<iostream>
-	<stdio.h>
-	<stdlib.h>
-
-1622508072 source:\\mac\home\desktop\spl1-master\spl-1\printfinalresults.cpp
-	"header.h"
-
-1622508072 source:\\mac\home\desktop\spl1-master\spl-1\probabilitymenu.cpp
-	"header.h"
-
-1622508072 source:\\mac\home\desktop\spl1-master\spl-1\qt_calculator.cpp
-
-1622508072 source:\\mac\home\desktop\spl1-master\spl-1\read_file.cpp
-	"header.h"
-
-1622508072 source:\\mac\home\desktop\spl1-master\spl-1\regprintresults.cpp
-	"header.h"
-
-1622508072 source:\\mac\home\desktop\spl1-master\spl-1\sb1_calculator.cpp
-	"header.h"
-
-1622508072 source:\\mac\home\desktop\spl1-master\spl-1\sort.cpp
-
-1622508072 source:\\mac\home\desktop\spl1-master\spl-1\sum.cpp
-
-1622508072 source:\\mac\home\desktop\spl1-master\spl-1\sum_square.cpp
-
-1622508072 source:\\mac\home\desktop\spl1-master\spl-1\ungroupmenu.cpp
-	<iostream>
-	<stdio.h>
-	<conio.h>
-	<stdlib.h>
-	<math.h>
-	"header.h"
-
-1622508072 source:\\mac\home\desktop\spl1-master\spl-1\ungrouptogroupconverter.cpp
-	"header.h"
-
-1622508072 source:\\mac\home\desktop\spl1-master\spl-1\ungrouptogroupmenu.cpp
-	"header.h"
-
-1622508072 source:\\mac\home\desktop\spl1-master\spl-1\variance_calculator.cpp
-	"header.h"
-
-1623830849 source:\\mac\home\desktop\spl1-master\spl-1\printfrequencypolygon.cpp
-	<iostream>
-	<stdlib.h>
-	<stdio.h>
-	<graphics.h>
-
-1623830431 source:\\mac\home\desktop\spl1-master\spl-1\printogive.cpp
-	"header.h"
+1624841245 source:c:\users\mukter\documents\c and c++\spl-1\initgraph.cpp
 	<graphics.h>
 
