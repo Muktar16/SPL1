@@ -50,7 +50,7 @@
 1583924567 source:c:\users\mukter\documents\c and c++\spl-1\hmean_calculator.cpp
 	"header.h"
 
-1624841245 c:\users\mukter\documents\c and c++\spl-1\header.h
+1625198256 c:\users\mukter\documents\c and c++\spl-1\header.h
 	<iostream>
 	<math.h>
 	<stdlib.h>
@@ -60,7 +60,7 @@
 1616191951 source:c:\users\mukter\documents\c and c++\spl-1\main_function.cpp
 	"header.h"
 
-1624907884 source:c:\users\mukter\documents\c and c++\spl-1\main_menu.cpp
+1625198278 source:c:\users\mukter\documents\c and c++\spl-1\main_menu.cpp
 	<graphics.h>
 	"header.h"
 
@@ -83,7 +83,7 @@
 
 1583921686 source:c:\users\mukter\documents\c and c++\spl-1\sum_square.cpp
 
-1624913342 source:c:\users\mukter\documents\c and c++\spl-1\ungroupmenu.cpp
+1625198297 source:c:\users\mukter\documents\c and c++\spl-1\ungroupmenu.cpp
 	"header.h"
 	<graphics.h>
 
@@ -95,14 +95,14 @@
 	<stdio.h>
 	<stdlib.h>
 
-1616361297 source:c:\users\mukter\documents\c and c++\spl-1\groupmenu.cpp
-	<stdlib.h>
+1625374948 source:c:\users\mukter\documents\c and c++\spl-1\groupmenu.cpp
 	<iostream>
 	<conio.h>
 	<stdio.h>
+	<graphics.h>
 	"header.h"
 
-1622526274 source:c:\users\mukter\documents\c and c++\spl-1\printfrequencypolygon.cpp
+1625377293 source:c:\users\mukter\documents\c and c++\spl-1\printfrequencypolygon.cpp
 	<iostream>
 	<stdlib.h>
 	<stdio.h>
@@ -304,6 +304,6 @@
 1624822719 source:c:\users\mukter\documents\c and c++\spl-1\newline.cpp
 	<graphics.h>
 
-1624841245 source:c:\users\mukter\documents\c and c++\spl-1\initgraph.cpp
+1625198216 source:c:\users\mukter\documents\c and c++\spl-1\initgraph.cpp
 	<graphics.h>
 

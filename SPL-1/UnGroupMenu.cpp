@@ -11,7 +11,7 @@ void unGroupMenu()
     char tempStr[100];
 
     //opening a window to get input data values from user
-    initGraph("Input data window");
+    initGraph("Input data window",0,0,-3,-3);
     settextstyle(10,HORIZ_DIR,2);
     setcolor(11);
 

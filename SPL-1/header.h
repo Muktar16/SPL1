@@ -7,7 +7,7 @@ using namespace std;
 
 
 void AltEnter();
-void initGraph(char *);
+void initGraph(char *,int, int,int,int);
 
 void main_menu();
 void unGroupMenu();

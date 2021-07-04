@@ -4,7 +4,7 @@
 
 void main_menu()
 {
-    initGraph("Msin Menu Window");
+    initGraph("Msin Menu Window",0,0,-3,-3);
     settextstyle(10,HORIZ_DIR,5);
 
     setcolor(3);
