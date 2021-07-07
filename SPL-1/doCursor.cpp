@@ -1,9 +1,12 @@
 #include<graphics.h>
-void doCursor(int on) {
+
+void doCursor(int on)
+{
   int curX,oldColor;
-  /* we'll use an underbar as a cursor */
+
+  //using underbar as a cursor
   char uBarStr[2] = { '_',0 };
-  /* if cursor goes OFF, erase by drawing w/bkground color */
+  //if cursor goes OFF, erase by drawing w/bkground color */
   if (!on) {
       oldColor=getcolor();
       setcolor(getbkcolor());

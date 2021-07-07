@@ -10,7 +10,7 @@ using namespace std;
 
 void groupMenu()
 {
-    initGraph("Getting input for grouped data",500,300,400,200);
+    initGraph("Getting input for grouped data",500,400,400,200);
     char tempString[100];
     moveto(130,100);
     setcolor(LIGHTGREEN);
@@ -24,9 +24,18 @@ void groupMenu()
     for(int i=0;i<n;i++)
     {
         char temp[20];
-        cleardevice();
-        moveto(0,0);
-        newLine();
+        if(i%2==0)
+        {
+                cleardevice();
+                moveto(0,0);
+                newLine();
+        }
+        else
+        {
+                newLine();
+                newLine();
+        }
+
         sprintf(temp,"CLASS-%d:",i+1);
         outtext(temp);
         newLine();
@@ -126,7 +135,7 @@ void groupMenu()
             {
                 closegraph();
                 system("cls||clear");
-                    printFrequencyPolygon(LB,UB,F,n);
+                printFrequencyPolygon(LB,UB,F,n);
     //                cout<<"\n\n\n\t\t\t\t\t\t\tPress Any Key To Continue..............";
     //                _getch();
                 break;
@@ -135,7 +144,7 @@ void groupMenu()
             {
                 closegraph();
                 system("cls||clear");
-    //            printOgive(LB,UB,F,n);
+                printOgive(LB,UB,F,n);
                 cout<<"\n\n\n\t\t\t\t\t\t\tPress Any Key To Continue..............";
                 _getch();
                 break;
@@ -147,7 +156,7 @@ void groupMenu()
                 main_menu();
                 return;
             }
-            else if(x>=500&&x<=905 && y>=460&&y<=500)
+            else if(x>=500&&x<=905 && y>=490&&y<=530)
             {
                exit(0);
             }

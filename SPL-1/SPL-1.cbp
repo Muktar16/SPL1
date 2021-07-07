@@ -63,6 +63,7 @@
 		<Unit filename="printFDtable.cpp" />
 		<Unit filename="printFinalResults.cpp" />
 		<Unit filename="printFrequencyPolygon.cpp" />
+		<Unit filename="printOgive.cpp" />
 		<Unit filename="probabilityMenu.cpp" />
 		<Unit filename="qt_calculator.cpp" />
 		<Unit filename="read_file.cpp" />

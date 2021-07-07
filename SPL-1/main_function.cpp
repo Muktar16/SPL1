@@ -3,7 +3,10 @@ using namespace std;
 
 int main( )
 {
-    main_menu();
+    while(1)
+    {
+        main_menu();
+    }
     return 0;
 }
 

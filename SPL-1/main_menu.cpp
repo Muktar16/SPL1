@@ -40,6 +40,8 @@ void main_menu()
 
     delay(500);
     POINT position;
+    position.x=0;
+    position.y=0;
     int x,y;
 
     while(1)
@@ -60,36 +62,42 @@ void main_menu()
             closegraph();
             delay(500);
             groupMenu();
+            break;
         }
         else if(x>=220&&x<=600 && y>=370&&y<=460)
         {
             closegraph();
             delay(500);
             unGroupToGroupMenu();
+            break;
         }
         else if(x>=220&&x<=600 && y>=500&&y<=560)
         {
             closegraph();
             delay(500);
             formulaSheetsMenu();
+            break;
         }
         else if(x>=780&&x<=1160 && y>=170&&y<=230)
         {
             closegraph();
             delay(500);
             CoRelationAndRegressionMenu();
+            break;
         }
         else if(x>=780&&x<=1160 && y>=270&&y<=330)
         {
             closegraph();
             delay(500);
             probabilityMenu();
+            break;
         }
         else if(x>=780&&x<=1160 && y>=380&&y<=440)
         {
             closegraph();
             delay(500);
             graphMenu();
+            break;
         }
         else if(x>=780&&x<=1160 && y>=500&&y<=560)
         {
