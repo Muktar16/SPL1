@@ -71,8 +71,10 @@ void groupMenu()
         rectangle(500,220,905,280);//Display Frequency Distribution Table and Final Results
         rectangle(500,310,905,340);//Display Frequency Polygon
         rectangle(500,370,905,400);//Display ogive
-        rectangle(500,430,905,460);//Back to main menu
-        rectangle(500,490,905,520);//Exit
+        rectangle(500,430,905,460);//Display pie Chart
+        rectangle(500,490,905,520);//Display Histogram
+        rectangle(500,550,905,580);//Back to main menu
+        rectangle(500,610,905,640);//Exit
 
         setcolor(LIGHTBLUE);
         settextstyle(BOLD_FONT,HORIZ_DIR,1);
@@ -82,9 +84,11 @@ void groupMenu()
         outtextxy(575,255,"table and Final Results");
         outtextxy(565,315,"Display Frequency Polygon");
         outtextxy(630,375,"Display Ogive");
-        outtextxy(605,435,"Back to main menu");
+        outtextxy(605,435,"Display pie Chart");
+        outtextxy(605,495,"Display Histogram");
+        outtextxy(605,555,"Back to Main Menu");
         setcolor(RED);
-        outtextxy(685,495,"Exit");
+        outtextxy(685,615,"Exit");
 
 
         delay(500);
@@ -111,7 +115,6 @@ void groupMenu()
             else if(x>=500&&x<=905 && y>=160&&y<=200)
             {
                 closegraph();
-                delay(500);
                 system("cls||clear");
                 printf("\n\n\n\n\n\n\n\n\n");
                 printFinalResults(LB,UB,F,n);
@@ -122,7 +125,6 @@ void groupMenu()
             else if(x>=500&&x<=905 && y>=220&&y<=290)
             {
                 closegraph();
-                delay(500);
                 system("cls||clear");
                 printFDtable(LB,UB,F,n);
                 printf("\n\n\n");
@@ -136,8 +138,6 @@ void groupMenu()
                 closegraph();
                 system("cls||clear");
                 printFrequencyPolygon(LB,UB,F,n);
-    //                cout<<"\n\n\n\t\t\t\t\t\t\tPress Any Key To Continue..............";
-    //                _getch();
                 break;
             }
             else if(x>=500&&x<=905 && y>=370&&y<=410)
@@ -145,21 +145,36 @@ void groupMenu()
                 closegraph();
                 system("cls||clear");
                 printOgive(LB,UB,F,n);
-                cout<<"\n\n\n\t\t\t\t\t\t\tPress Any Key To Continue..............";
-                _getch();
                 break;
             }
             else if(x>=500&&x<=905 && y>=430&&y<=470)
             {
                 closegraph();
                 system("cls||clear");
-                main_menu();
-                return;
+                printPieChart(F,n);
+                break;
+
             }
             else if(x>=500&&x<=905 && y>=490&&y<=530)
             {
+               closegraph();
+               system("cls||clear");
+               //printHistogram(F,n);
+               return;
+            }
+            else if(x>=500&&x<=905 && y>=510&&y<=550)
+            {
+               closegraph();
+               system("cls||clear");
+               main_menu();
+               return;
+            }
+
+            else if(x>=500&&x<=905 && y>=570&&y<=610)
+            {
                exit(0);
             }
+
             else
             {
                 continue;

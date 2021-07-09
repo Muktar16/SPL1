@@ -50,7 +50,8 @@ void unGroupMenu()
     int widthOfScreen = GetSystemMetrics(SM_CXSCREEN);
     for(i=0;i<dataNum; i++)
     {
-        sprintf(tempStr,"%.2f  ",Data[i]);
+        if(Data[i]==(int)Data[i]) sprintf(tempStr,"%d  ",(int)Data[i]);
+        else sprintf(tempStr,"%.2f  ",Data[i]);
         outtext(tempStr);
 
         if(getx()>=widthOfScreen-50)
@@ -67,7 +68,8 @@ void unGroupMenu()
     outtext("-> GROWING SEQUENCE   = ");
     for(int i=0;i<dataNum;i++)
     {
-        sprintf(tempStr,"%.2f  ",Data2[i]);
+        if(Data2[i]==(int)Data2[i]) sprintf(tempStr,"%d  ",(int)Data2[i]);
+        else sprintf(tempStr,"%.2f  ",Data2[i]);
         outtext(tempStr);
         if(getx()>=widthOfScreen-50)
         {
