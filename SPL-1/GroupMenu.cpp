@@ -1,11 +1,7 @@
-//#include<stdlib.h>
-#include<iostream>
 #include<conio.h>
 #include<stdio.h>
 #include<graphics.h>
 #include"header.h"
-using namespace std;
-
 
 
 void groupMenu()
@@ -159,10 +155,10 @@ void groupMenu()
             {
                closegraph();
                system("cls||clear");
-               //printHistogram(F,n);
-               return;
+               printHistogram(LB,UB,F,n);
+               break;
             }
-            else if(x>=500&&x<=905 && y>=510&&y<=550)
+            else if(x>=500&&x<=905 && y>=550&&y<=590)
             {
                closegraph();
                system("cls||clear");
@@ -170,7 +166,7 @@ void groupMenu()
                return;
             }
 
-            else if(x>=500&&x<=905 && y>=570&&y<=610)
+            else if(x>=500&&x<=905 && y>=610&&y<=650)
             {
                exit(0);
             }

@@ -1,8 +1,8 @@
-#include<iostream>
 #include<math.h>
 #include<stdlib.h>
 #include<stdio.h>
 #include<conio.h>
+#include<iostream>
 using namespace std;
 
 
@@ -38,6 +38,7 @@ double group_variance_calculator(double *LB,double *UB,int *F,int n);
 void printFrequencyPolygon(double *LB,double* UB,int *F,int n);
 void printOgive(double *LB,double* UB,int *F,int n);
 void printPieChart(int *F,int n);
+void printHistogram(double *LB,double *UB,int *F,int n);
 
 void unGroupToGroupMenu();
 void unGroupToGroupConverter(double* Data,double* LB,double* UB,int *F,int G,int N);

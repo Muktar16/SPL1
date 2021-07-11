@@ -63,6 +63,7 @@
 		<Unit filename="printFDtable.cpp" />
 		<Unit filename="printFinalResults.cpp" />
 		<Unit filename="printFrequencyPolygon.cpp" />
+		<Unit filename="printHistogram.cpp" />
 		<Unit filename="printOgive.cpp" />
 		<Unit filename="printPieChart.cpp" />
 		<Unit filename="probabilityMenu.cpp" />

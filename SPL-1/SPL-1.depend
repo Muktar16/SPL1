@@ -50,12 +50,12 @@
 1625578916 source:c:\users\mukter\documents\c and c++\spl-1\hmean_calculator.cpp
 	"header.h"
 
-1624009731 c:\users\mukter\documents\c and c++\spl-1\header.h
-	<iostream>
+1625844594 c:\users\mukter\documents\c and c++\spl-1\header.h
 	<math.h>
 	<stdlib.h>
 	<stdio.h>
 	<conio.h>
+	<iostream>
 
 1625578916 source:c:\users\mukter\documents\c and c++\spl-1\main_function.cpp
 	"header.h"
@@ -95,8 +95,7 @@
 	<stdio.h>
 	<stdlib.h>
 
-1624009911 source:c:\users\mukter\documents\c and c++\spl-1\groupmenu.cpp
-	<iostream>
+1625885714 source:c:\users\mukter\documents\c and c++\spl-1\groupmenu.cpp
 	<conio.h>
 	<stdio.h>
 	<graphics.h>
@@ -475,6 +474,10 @@
 	"header.h"
 
 1624009731 source:c:\users\mukter\documents\c and c++\spl-1\printpiechart.cpp
+	<graphics.h>
+	"header.h"
+
+1625887786 source:c:\users\mukter\documents\c and c++\spl-1\printhistogram.cpp
 	<graphics.h>
 	"header.h"
 
