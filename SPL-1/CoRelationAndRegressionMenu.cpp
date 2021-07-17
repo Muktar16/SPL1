@@ -1,19 +1,17 @@
 #include"header.h"
+#include<graphics.h>
 
 void CoRelationAndRegressionMenu()
 {
-    char tempStr[2000];
 
-    initGraph("Co Relation and regretion",0,0,-3,-3);
-    initGraph("Input data window",0,0,-3,-3);
-    settextstyle(10,HORIZ_DIR,2);
-    setcolor(11);
-
+    initGraph("Input window for Co-relation and Regration ",0,0,-3,-3);
     moveto(0,0);
-    newLine();
-    newLine();
-    outtext("Enter values of X: (e.g 2,3,5 ");
-    getGrString(tempStr);
+    int flag=1;
+    while(flag==1)
+    {
+        getGrString("Enter values for class X e.g 1,2,3: ");
+    }
+
 
 
 //    system("cls||clear");

@@ -1,6 +1,7 @@
 #include<graphics.h>
 void graphMenu()
 {
+
     int heightOfScreen = GetSystemMetrics(SM_CXSCREEN);
     int widthOfScreen = GetSystemMetrics(SM_CYSCREEN);
     initwindow(heightOfScreen,widthOfScreen,"Graph Menu",-3,-3);

@@ -32,6 +32,7 @@
 			<Add option="-Wall" />
 		</Compiler>
 		<Unit filename="CoRelationAndRegressionMenu.cpp" />
+		<Unit filename="Combination_nCr.cpp" />
 		<Unit filename="GroupMenu.cpp" />
 		<Unit filename="Hmean_calculator.cpp" />
 		<Unit filename="Hyper_geo_dis.cpp" />

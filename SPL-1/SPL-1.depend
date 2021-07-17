@@ -446,12 +446,12 @@
 	<graphics.h>
 	"header.h"
 
-1624009731 \\mac\home\desktop\muktar\c and c++\spl-1\header.h
-	<iostream>
+1626548559 \\mac\home\desktop\muktar\c and c++\spl-1\header.h
 	<math.h>
 	<stdlib.h>
 	<stdio.h>
 	<conio.h>
+	<iostream>
 
 1623986786 source:\\mac\home\desktop\muktar\c and c++\spl-1\printogive.cpp
 	<graphics.h>
@@ -462,8 +462,7 @@
 	"header.h"
 	<graphics.h>
 
-1624006195 source:\\mac\home\desktop\muktar\c and c++\spl-1\groupmenu.cpp
-	<iostream>
+1626236670 source:\\mac\home\desktop\muktar\c and c++\spl-1\groupmenu.cpp
 	<conio.h>
 	<stdio.h>
 	<graphics.h>
@@ -480,4 +479,121 @@
 1625929980 source:c:\users\mukter\documents\c and c++\spl-1\printhistogram.cpp
 	<graphics.h>
 	"header.h"
+
+1625578916 source:\\mac\home\desktop\muktar\c and c++\spl-1\bio_dis.cpp
+	"header.h"
+
+1625578916 source:\\mac\home\desktop\muktar\c and c++\spl-1\calculate_b.cpp
+	"header.h"
+
+1626450687 source:\\mac\home\desktop\muktar\c and c++\spl-1\corelationandregressionmenu.cpp
+	"header.h"
+	<graphics.h>
+
+1626450309 source:\\mac\home\desktop\muktar\c and c++\spl-1\docursor.cpp
+	<graphics.h>
+
+1625578916 source:\\mac\home\desktop\muktar\c and c++\spl-1\formulasheetsmenu.cpp
+	"header.h"
+
+1626450687 source:\\mac\home\desktop\muktar\c and c++\spl-1\getgrstring.cpp
+	<graphics.h>
+	"header.h"
+
+1625578916 source:\\mac\home\desktop\muktar\c and c++\spl-1\gmean_calculator.cpp
+	<math.h>
+
+1626284858 source:\\mac\home\desktop\muktar\c and c++\spl-1\graphmenu.cpp
+	<graphics.h>
+
+1625578916 source:\\mac\home\desktop\muktar\c and c++\spl-1\group_gmean_calculator.cpp
+	<math.h>
+
+1625578916 source:\\mac\home\desktop\muktar\c and c++\spl-1\group_hmean_calculator.cpp
+
+1625578916 source:\\mac\home\desktop\muktar\c and c++\spl-1\group_mean_claculator.cpp
+
+1625578916 source:\\mac\home\desktop\muktar\c and c++\spl-1\group_median_calculator.cpp
+
+1625578916 source:\\mac\home\desktop\muktar\c and c++\spl-1\group_mode_calculator.cpp
+
+1625578916 source:\\mac\home\desktop\muktar\c and c++\spl-1\group_variance_calculator.cpp
+	"header.h"
+
+1625578916 source:\\mac\home\desktop\muktar\c and c++\spl-1\hmean_calculator.cpp
+	"header.h"
+
+1626531266 source:\\mac\home\desktop\muktar\c and c++\spl-1\hyper_geo_dis.cpp
+	"header.h"
+
+1625578916 source:\\mac\home\desktop\muktar\c and c++\spl-1\initgraph.cpp
+	<graphics.h>
+
+1625578916 source:\\mac\home\desktop\muktar\c and c++\spl-1\main_function.cpp
+	"header.h"
+
+1625578916 source:\\mac\home\desktop\muktar\c and c++\spl-1\max_min_calculator.cpp
+	"header.h"
+	<stdlib.h>
+
+1625578916 source:\\mac\home\desktop\muktar\c and c++\spl-1\mean_calculator.cpp
+	"header.h"
+
+1625578916 source:\\mac\home\desktop\muktar\c and c++\spl-1\median_calculator.cpp
+
+1625578916 source:\\mac\home\desktop\muktar\c and c++\spl-1\mode_calculator.cpp
+
+1625578916 source:\\mac\home\desktop\muktar\c and c++\spl-1\newline.cpp
+	<graphics.h>
+
+1625578916 source:\\mac\home\desktop\muktar\c and c++\spl-1\printfdtable.cpp
+	<iostream>
+	<stdio.h>
+	<stdlib.h>
+
+1625578916 source:\\mac\home\desktop\muktar\c and c++\spl-1\printfinalresults.cpp
+	"header.h"
+
+1625578916 source:\\mac\home\desktop\muktar\c and c++\spl-1\printfrequencypolygon.cpp
+	<stdio.h>
+	"header.h"
+	<graphics.h>
+
+1625929980 source:\\mac\home\desktop\muktar\c and c++\spl-1\printhistogram.cpp
+	<graphics.h>
+	"header.h"
+
+1625578916 source:\\mac\home\desktop\muktar\c and c++\spl-1\probabilitymenu.cpp
+	"header.h"
+	<graphics.h>
+
+1625578916 source:\\mac\home\desktop\muktar\c and c++\spl-1\qt_calculator.cpp
+
+1625578916 source:\\mac\home\desktop\muktar\c and c++\spl-1\read_file.cpp
+	"header.h"
+
+1625578916 source:\\mac\home\desktop\muktar\c and c++\spl-1\regprintresults.cpp
+	"header.h"
+
+1625578916 source:\\mac\home\desktop\muktar\c and c++\spl-1\sb1_calculator.cpp
+	"header.h"
+
+1625578916 source:\\mac\home\desktop\muktar\c and c++\spl-1\sort.cpp
+
+1625578916 source:\\mac\home\desktop\muktar\c and c++\spl-1\sum.cpp
+
+1625578916 source:\\mac\home\desktop\muktar\c and c++\spl-1\sum_square.cpp
+
+1626236670 source:\\mac\home\desktop\muktar\c and c++\spl-1\ungrouptogroupconverter.cpp
+	"header.h"
+
+1626236670 source:\\mac\home\desktop\muktar\c and c++\spl-1\ungrouptogroupmenu.cpp
+	"header.h"
+	<graphics.h>
+
+1626236670 source:\\mac\home\desktop\muktar\c and c++\spl-1\variance_calculator.cpp
+	"header.h"
+
+1626546592 source:\\mac\home\desktop\muktar\c and c++\spl-1\calculate_h.cpp
+	<math.h>
 

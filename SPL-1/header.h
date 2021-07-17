@@ -52,6 +52,7 @@ void bio_dis();
 void pois_dis_p_given();
 double calculate_b(int n,int x,double p);
 void Hyper_geo_dis();
+int combination_nCr(int n,int r);
 
 void graphMenu();
 
