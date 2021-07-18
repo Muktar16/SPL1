@@ -211,7 +211,7 @@ void unGroupMenu()
         }
         else continue;
     }
-
+}
 
     //getch();
     //closegraph();
@@ -320,4 +320,4 @@ void unGroupMenu()
 //        }
 //
 //    }
-}
+

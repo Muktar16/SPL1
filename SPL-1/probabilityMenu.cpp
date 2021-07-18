@@ -76,7 +76,7 @@ void probabilityMenu()
             else if(x>=780&&x<=1160 && y>=170&&y<=230)
             {
                 closegraph();
-                //neg_bio_dis();
+                neg_bio_dis();
                 break;
             }
             else if(x>=780&&x<=1160 && y>=270&&y<=330)

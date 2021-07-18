@@ -446,7 +446,7 @@
 	<graphics.h>
 	"header.h"
 
-1626548559 \\mac\home\desktop\muktar\c and c++\spl-1\header.h
+1626605655 \\mac\home\desktop\muktar\c and c++\spl-1\header.h
 	<math.h>
 	<stdlib.h>
 	<stdio.h>
@@ -458,7 +458,7 @@
 	<stdio.h>
 	"header.h"
 
-1623816324 source:\\mac\home\desktop\muktar\c and c++\spl-1\ungroupmenu.cpp
+1626603900 source:\\mac\home\desktop\muktar\c and c++\spl-1\ungroupmenu.cpp
 	"header.h"
 	<graphics.h>
 
@@ -523,8 +523,9 @@
 1625578916 source:\\mac\home\desktop\muktar\c and c++\spl-1\hmean_calculator.cpp
 	"header.h"
 
-1626531266 source:\\mac\home\desktop\muktar\c and c++\spl-1\hyper_geo_dis.cpp
+1626604842 source:\\mac\home\desktop\muktar\c and c++\spl-1\hyper_geo_dis.cpp
 	"header.h"
+	<graphics.h>
 
 1625578916 source:\\mac\home\desktop\muktar\c and c++\spl-1\initgraph.cpp
 	<graphics.h>
@@ -563,7 +564,7 @@
 	<graphics.h>
 	"header.h"
 
-1625578916 source:\\mac\home\desktop\muktar\c and c++\spl-1\probabilitymenu.cpp
+1626605655 source:\\mac\home\desktop\muktar\c and c++\spl-1\probabilitymenu.cpp
 	"header.h"
 	<graphics.h>
 
@@ -595,5 +596,8 @@
 	"header.h"
 
 1626546592 source:\\mac\home\desktop\muktar\c and c++\spl-1\calculate_h.cpp
+	<math.h>
+
+1626548559 source:\\mac\home\desktop\muktar\c and c++\spl-1\combination_ncr.cpp
 	<math.h>
 
