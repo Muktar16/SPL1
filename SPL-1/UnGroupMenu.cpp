@@ -16,6 +16,7 @@ void unGroupMenu()
     setcolor(11);
 
     moveto(0,0);
+    newLine();
     outtext("Enter Data values separated with comma: ");
     newLine();
     newLine();

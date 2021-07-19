@@ -442,7 +442,7 @@
 	<stdio.h>
 	"header.h"
 
-1623816002 source:\\mac\home\desktop\muktar\c and c++\spl-1\main_menu.cpp
+1626700463 source:\\mac\home\desktop\muktar\c and c++\spl-1\main_menu.cpp
 	<graphics.h>
 	"header.h"
 
@@ -458,11 +458,11 @@
 	<stdio.h>
 	"header.h"
 
-1626603900 source:\\mac\home\desktop\muktar\c and c++\spl-1\ungroupmenu.cpp
+1626700463 source:\\mac\home\desktop\muktar\c and c++\spl-1\ungroupmenu.cpp
 	"header.h"
 	<graphics.h>
 
-1626236670 source:\\mac\home\desktop\muktar\c and c++\spl-1\groupmenu.cpp
+1626701333 source:\\mac\home\desktop\muktar\c and c++\spl-1\groupmenu.cpp
 	<conio.h>
 	<stdio.h>
 	<graphics.h>
@@ -486,7 +486,7 @@
 1625578916 source:\\mac\home\desktop\muktar\c and c++\spl-1\calculate_b.cpp
 	"header.h"
 
-1626450687 source:\\mac\home\desktop\muktar\c and c++\spl-1\corelationandregressionmenu.cpp
+1626703624 source:\\mac\home\desktop\muktar\c and c++\spl-1\corelationandregressionmenu.cpp
 	"header.h"
 	<graphics.h>
 
@@ -588,7 +588,7 @@
 1626236670 source:\\mac\home\desktop\muktar\c and c++\spl-1\ungrouptogroupconverter.cpp
 	"header.h"
 
-1626236670 source:\\mac\home\desktop\muktar\c and c++\spl-1\ungrouptogroupmenu.cpp
+1626701688 source:\\mac\home\desktop\muktar\c and c++\spl-1\ungrouptogroupmenu.cpp
 	"header.h"
 	<graphics.h>
 
@@ -600,4 +600,8 @@
 
 1626548559 source:\\mac\home\desktop\muktar\c and c++\spl-1\combination_ncr.cpp
 	<math.h>
+
+1626634790 source:\\mac\home\desktop\muktar\c and c++\spl-1\neg_bio_dis.cpp
+	<graphics.h>
+	"header.h"
 

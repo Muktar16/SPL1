@@ -6,21 +6,25 @@
 
 void groupMenu()
 {
-    initGraph("Getting input for grouped data",500,400,400,200);
+    //initilizing a window to get input data
+    initGraph("Getting input for grouped data",0,0,-3,-3);
     char tempString[100];
-    moveto(130,100);
+    moveto(0,0);
+    newLine();
     setcolor(LIGHTGREEN);
-    outtext("Enter Number of clasees: ");
+    outtext("Enter Number of classes or Groups: ");
     getGrString(tempString);
 
     int n = atoi(tempString);
-    double LB[n],UB[n];
-    int F[n];
+    double LB[n],UB[n];//LB=Lower Boundary, UB=Upper Boundary
+    int F[n];//Frequency of each class
+    int maxy = getmaxy();
 
+    newLine();
     for(int i=0;i<n;i++)
     {
         char temp[20];
-        if(i%2==0)
+        if(gety()>=maxy-150)
         {
                 cleardevice();
                 moveto(0,0);
@@ -34,7 +38,6 @@ void groupMenu()
 
         sprintf(temp,"CLASS-%d:",i+1);
         outtext(temp);
-        newLine();
         newLine();
         outtext("Enter Lower Boundery: ");
         getGrString(temp);
