@@ -5,7 +5,7 @@ void CoRelationAndRegressionMenu()
 {
     char tempStr[2000];
     int n,i,j;
-    float X[100],Y[100],XY[100];
+    double X[100],Y[100],XY[100];
 
     initGraph("Input data window for Co-relation and Regration",0,0,-3,-3);
     settextstyle(10,HORIZ_DIR,2);
@@ -15,10 +15,10 @@ void CoRelationAndRegressionMenu()
     newLine();
     outtext("Enter values of class X separated with comma: ");
     newLine();
-    getGrString(tempStr);//getting data values as a string separated with comma
+    getGrString(tempStr);//getting X values as a string separated with comma
 
 
-    //convert string data to double data
+    //convert string X to double X
     char *token = strtok(tempStr, ",");  // Returns first token
     X[0]=stod(token);
 
@@ -49,7 +49,7 @@ void CoRelationAndRegressionMenu()
 
         //convert string data to double data
         char *token = strtok(tempStr, ",");  // Returns first token
-        X[0]=stod(token);
+        Y[0]=stod(token);
 
         i=1;
         while (token != NULL)
@@ -79,11 +79,16 @@ void CoRelationAndRegressionMenu()
         }
     }
 
+
     //calculation of XY
     for(i=0;i<n;i++) XY[i]=X[i]*Y[i];
 
     //print results
-    RegPrintResults(X,Y,XY,n);
+    closegraph();
+    while(1)
+    {
+        RegPrintResults(X,Y,XY,n);
+    }
 
 }
 

@@ -446,7 +446,7 @@
 	<graphics.h>
 	"header.h"
 
-1626605655 \\mac\home\desktop\muktar\c and c++\spl-1\header.h
+1626772389 \\mac\home\desktop\muktar\c and c++\spl-1\header.h
 	<math.h>
 	<stdlib.h>
 	<stdio.h>
@@ -480,13 +480,14 @@
 	<graphics.h>
 	"header.h"
 
-1625578916 source:\\mac\home\desktop\muktar\c and c++\spl-1\bio_dis.cpp
+1626780567 source:\\mac\home\desktop\muktar\c and c++\spl-1\bio_dis.cpp
 	"header.h"
+	<graphics.h>
 
 1625578916 source:\\mac\home\desktop\muktar\c and c++\spl-1\calculate_b.cpp
 	"header.h"
 
-1626703624 source:\\mac\home\desktop\muktar\c and c++\spl-1\corelationandregressionmenu.cpp
+1626762603 source:\\mac\home\desktop\muktar\c and c++\spl-1\corelationandregressionmenu.cpp
 	"header.h"
 	<graphics.h>
 
@@ -573,15 +574,16 @@
 1625578916 source:\\mac\home\desktop\muktar\c and c++\spl-1\read_file.cpp
 	"header.h"
 
-1625578916 source:\\mac\home\desktop\muktar\c and c++\spl-1\regprintresults.cpp
+1626772389 source:\\mac\home\desktop\muktar\c and c++\spl-1\regprintresults.cpp
 	"header.h"
+	<graphics.h>
 
 1625578916 source:\\mac\home\desktop\muktar\c and c++\spl-1\sb1_calculator.cpp
 	"header.h"
 
 1625578916 source:\\mac\home\desktop\muktar\c and c++\spl-1\sort.cpp
 
-1625578916 source:\\mac\home\desktop\muktar\c and c++\spl-1\sum.cpp
+1626736779 source:\\mac\home\desktop\muktar\c and c++\spl-1\sum.cpp
 
 1625578916 source:\\mac\home\desktop\muktar\c and c++\spl-1\sum_square.cpp
 
@@ -604,4 +606,8 @@
 1626634790 source:\\mac\home\desktop\muktar\c and c++\spl-1\neg_bio_dis.cpp
 	<graphics.h>
 	"header.h"
+
+1626773124 source:\\mac\home\desktop\muktar\c and c++\spl-1\printscatterdiagram.cpp
+	"header.h"
+	<graphics.h>
 

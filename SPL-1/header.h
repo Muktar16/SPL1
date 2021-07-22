@@ -45,6 +45,7 @@ void unGroupToGroupConverter(double* Data,double* LB,double* UB,int *F,int G,int
 
 void CoRelationAndRegressionMenu();
 void RegPrintResults(double *X,double *Y,double *XY ,int n);
+void printScatterDiagram(double* X,double *Y,int n,double r);
 double sb1_calculator(double* X,double* Y,int n);
 
 void probabilityMenu();
