@@ -4,7 +4,7 @@
 
 void main_menu()
 {
-    initGraph("Msin Menu Window",0,0,-3,-3);
+    initGraph("Main Menu Window",0,0,-3,-3);
     settextstyle(10,HORIZ_DIR,5);
 
     setcolor(3);
@@ -42,10 +42,11 @@ void main_menu()
     POINT position;
     position.x=0;
     position.y=0;
-    int x,y;
+    int x=0,y=0;
 
     while(1)
     {
+
         if(GetKeyState(VK_LBUTTON)&0x8000)  GetCursorPos(&position);
         x = position.x;
         y = position.y;

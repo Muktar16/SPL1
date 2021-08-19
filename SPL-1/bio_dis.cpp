@@ -43,6 +43,7 @@ void bio_dis()
     rectangle(10,y+100,215,y+130);//button 3
     rectangle(10,y+150,215,y+180);//button 4
     rectangle(10,y+200,215,y+230);//button 5
+
     //texts of each buttons
     setcolor(GREEN);
     sprintf(tempStr,"X = %d",X);//button 1 text
@@ -66,22 +67,27 @@ void bio_dis()
 
     //get cursor position and take action if button is pressed
     POINT position;
+    position.x=0;
+    position.y=0;
     int xx,yy;
+
     while(1)
     {
         if(GetKeyState(VK_LBUTTON)&0x8000)  GetCursorPos(&position);
         xx = position.x;
         yy = position.y;
-        setcolor(LIGHTGREEN);
-        settextstyle(3,HORIZ_DIR,3);
+
 
         if(xx>=10&&xx<=205 && yy>=y&&yy<=y+40)
         {
+            closegraph();
+            initGraph("Resulta",0,0,-3,-3);
+            setcolor(LIGHTGREEN);
+            settextstyle(3,HORIZ_DIR,3);
             prob=calculate_b(n,X,p);//calculate probability
-            cleardevice();
             newLine();
             newLine();
-            outtext("The result of Binomial Distribution for X=%d, n=%d, and p=%.2f",X,n,p);
+            sprintf(tempStr,"The result of Binomial Distribution for X=%d, n=%d, and p=%.2f",X,n,p);
             outtext(tempStr);
             newLine();
             newLine();
@@ -98,7 +104,7 @@ void bio_dis()
             cleardevice();
             newLine();
             newLine();
-            outtext("The result of Binomial Distribution for X<%d, n=%d, and p=%.2f",X,n,p);
+            sprintf(tempStr,"The result of Binomial Distribution for X<%d, n=%d, and p=%.2f",X,n,p);
             outtext(tempStr);
             newLine();
             newLine();
@@ -115,7 +121,7 @@ void bio_dis()
             cleardevice();
             newLine();
             newLine();
-            outtext("The result of Binomial Distribution for X>%d, n=%d, and p=%.2f",X,n,p);
+            sprintf(tempStr,"The result of Binomial Distribution for X>%d, n=%d, and p=%.2f",X,n,p);
             outtext(tempStr);
             newLine();
             newLine();
@@ -132,7 +138,7 @@ void bio_dis()
             cleardevice();
             newLine();
             newLine();
-            outtext("The result of Binomial Distribution for X<=%d, n=%d, and p=%.2f",X,n,p);
+            sprintf(tempStr,"The result of Binomial Distribution for X<=%d, n=%d, and p=%.2f",X,n,p);
             outtext(tempStr);
             newLine();
             newLine();
@@ -149,7 +155,7 @@ void bio_dis()
             cleardevice();
             newLine();
             newLine();
-            outtext("The result of Binomial Distribution for X>=%d, n=%d, and p=%.2f",X,n,p);
+            sprintf(tempStr,"The result of Binomial Distribution for X>=%d, n=%d, and p=%.2f",X,n,p);
             outtext(tempStr);
             newLine();
             newLine();

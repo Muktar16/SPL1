@@ -85,7 +85,7 @@ void probabilityMenu()
         else if(x>=780&&x<=1160 && y>=380&&y<=440)
         {
             closegraph();
-            main_menu;
+            main_menu();
             break;
         }
         else if(x>=780&&x<=1160 && y>=500&&y<=560)
