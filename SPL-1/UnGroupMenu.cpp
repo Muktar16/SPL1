@@ -12,7 +12,6 @@ void unGroupMenu()
 
     //opening a window to get input data values from user
     initGraph("Input data window",0,0,-3,-3);
-    settextstyle(10,HORIZ_DIR,2);
     setcolor(11);
 
     moveto(0,0);
@@ -206,119 +205,14 @@ void unGroupMenu()
         }
         else if(x>=x1&&x<=x1+205 && y>=y1+100&&y<=y1+140)
         {
+            cleardevice();
+            settextstyle(BOLD_FONT,HORIZ_DIR,5);
+            setcolor(LIGHTGREEN);
+            outtextxy(getmaxx()/2-150,getmaxy()/2,"THANK YOU");
+            delay(2000);
             closegraph();
             exit(0);
-            break;
         }
         else continue;
     }
 }
-
-    //getch();
-    //closegraph();
-    //initGraph("Results for unGrouped Data");
-
-
-
-//    system("cls||clear");
-//    //if(p=0) cout<<"\n\t\t\t\t\tYou have entered more than "<<dataNum<<" data values. However first "<<dataNum<<" values are considerd here.";
-//
-//    //print all values
-//
-//    printf("\n\n\n\n\n\n\n");
-//    printf("\n\t\t\t\t\t\t\t-> SAMPLE SEQUENCE    = ");   //print data sequence
-//    for(int i=0;i<dataNum; i++)
-//    {
-//        if(dataNum>10 && (i+1)%10==0) printf("\n\t\t\t\t\t\t\t                        ");
-//        printf("%.2f  ",Data[i]);
-//    }
-//    //printf("\n");
-//    printf("\n\t\t\t\t\t\t\t-> GROWING SEQUENCE   = ");
-//    Sort(Data2,dataNum);
-//    for(int i=0;i<dataNum;i++)
-//    {
-//        if(dataNum>10 && (i+1)%10==0) printf("\n\t\t\t\t\t\t\t                        ");
-//        printf("%.2f  ",Data2[i]);
-//    }
-//    printf("\n");
-//
-//    printf("\n\t\t\t\t\t\t\t-> SAMPLE SIZE        = %d",dataNum);
-//    printf("\n\t\t\t\t\t\t\t-> SUM OF X           = %.2f",sum(Data,dataNum));
-//    printf("\n\t\t\t\t\t\t\t-> SUM OF SQUARE X    = %.2f",sum_square(Data,dataNum));
-//    printf("\n");
-//
-//    double *Max_min;
-//    Max_min = max_min_calculator(Data,dataNum);
-//    Median = median_calculator(Data2,dataNum);
-//
-//    printf("\n\t\t\t\t\t\t\t-> MINIMUM VALUE      = %.2f",Max_min[1]);
-//    printf("\n\t\t\t\t\t\t\t-> 1st QUARTILE       = %.2f",qt_calculator(Data2,dataNum,1));
-//    printf("\n\t\t\t\t\t\t\t-> MEDIAN             = %.2f",Median);
-//    printf("\n\t\t\t\t\t\t\t-> 3rd QUARTILE       = %.2f",qt_calculator(Data2,dataNum,3));
-//    printf("\n\t\t\t\t\t\t\t-> MAXIMUM VALUE      = %.2f",Max_min[0]);
-//    printf("\n\t\t\t\t\t\t\t-> RANGE              = %.2f",Max_min[0]-Max_min[1]);
-//    printf("\n");
-//
-//    Mean = mean_calculator(Data,dataNum);
-//    printf("\n\t\t\t\t\t\t\t-> MEAN (AVERAGE)     = %.2f",Mean);
-//    printf("\n\t\t\t\t\t\t\t-> GEOMETRIC MEAN     = %.2f",gmean_calculator(Data,dataNum));
-//    printf("\n\t\t\t\t\t\t\t-> HARMONIC MEAN      = %.2f",hmean_calculator(Data,dataNum));
-//    printf("\n\t\t\t\t\t\t\t-> MODE               = %.2f",mode_calculator(Data,dataNum));
-//
-//    Variance = variance_calculator(Data,dataNum);
-//    if(Variance==0)
-//    {
-//        printf("\n\t\t\t\t\t\t\t-> VARIANCE OF X      = 0");
-//        printf("\n\t\t\t\t\t\t\t-> STANDARD DEVIATION = 0");
-//        printf("\n\t\t\t\t\t\t\t-> STANDARD ERROR     = 0");
-//        printf("\n");
-//        printf("\n\t\t\t\t\t\t\t-> COEFFICIENT OF VARIANCE = 0");
-//        printf("\n\t\t\t\t\t\t\t-> PEARSONS COEFFICIENT OF SKEWNESS = 0");
-//    }
-//    else
-//    {
-//        printf("\n\t\t\t\t\t\t\t-> VARIANCE OF X      = %.2f",Variance);
-//        printf("\n\t\t\t\t\t\t\t-> STANDARD DEVIATION = %.2f",sqrt(Variance));
-//        printf("\n\t\t\t\t\t\t\t-> STANDARD ERROR     = %.2f",sqrt(Variance)/sqrt(dataNum));
-//        printf("\n");
-//        printf("\n\t\t\t\t\t\t\t-> COEFFICIENT OF VARIANCE = %.2f",(sqrt(Variance)/Mean)*100); cout<<"%";
-//        printf("\n\t\t\t\t\t\t\t-> PEARSONS COEFFICIENT OF SKEWNESS = %.2f",(3*(Mean-Median))/sqrt(Variance));
-//
-//    }
-//
-//    int choice;
-//    printf("\n\n\n");
-//
-//    while(1)
-//    {
-//        printf("\n\t\t\t\t\t\t\t1.ANOTHER OPERATION\n\t\t\t\t\t\t\t2.BACK TO MAIN MENU\n\t\t\t\t\t\t\t3.EXIT\n\t\t\t\t\t\t\t");
-//        scanf("%d",&choice);
-//
-//        switch(choice)
-//        {
-//            case 1:
-//            {
-//                system("cls||clear");
-//                unGroupMenu();
-//                return;
-//            }
-//            case 2:
-//            {
-//                system("cls||clear");
-//                cout<<"\n\n\n\n\n\n\n\n\n";
-//                main_menu();
-//                break;
-//            }
-//            case 3: exit(0);
-//            default:
-//            {
-//                system("cls||clear");
-//                printf("\n\t\t\t\t\t\t\tWRONG INPUT!!! PRESS ANY KEY TO TRY AGAIN.");
-//                _getch();
-//                system("cls||clear");
-//            }
-//
-//        }
-//
-//    }
-

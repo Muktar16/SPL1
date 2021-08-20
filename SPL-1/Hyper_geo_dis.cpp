@@ -3,20 +3,35 @@
 
 void Hyper_geo_dis()
 {
-    system("cls||clear");
     int n,N,k,x,x1,y1;
     double h,mean,variance;
     char tempStr[500];
 
+    initGraph("Hyper Geometric Distribution input window",0,0,-3,-3);
+    moveto(0,0);
+    newLine();
+    newLine();
+    setcolor(11);
     //get the values for x,k,n,N
-    cout<<"\nEnter the value for X: ";
-    cin>>x;
-    cout<<"\n\nEnter the value for N: ";
-    cin>>N;
-    cout<<"\n\nEnter the value for n: ";
-    cin>>n;
-    cout<<"\n\nEnter the value for k: ";
-    cin>>k;
+    outtext("   Enter the value for X: ");
+    getGrString(tempStr);
+    x=atoi(tempStr);
+    newLine();
+    newLine();
+    outtext("   Enter the value for N: ");
+    getGrString(tempStr);
+    N = atoi(tempStr);
+    newLine();
+    newLine();
+    outtext("   Enter the value for n: ");
+    getGrString(tempStr);
+    n = atoi(tempStr);
+    newLine();
+    newLine();
+    outtext("   Enter the value for k: ");
+    getGrString(tempStr);
+    k = atoi(tempStr);
+    closegraph();
 
     //calculation of probability (denoted by h)
     double kCx=combination_nCr(k,x);
@@ -44,17 +59,17 @@ void Hyper_geo_dis()
     newLine();
 
     setcolor(LIGHTMAGENTA);
-    sprintf(tempStr,"-> h(%d;%d,%d,%d) = %.4f",x,N,n,k,h);
+    sprintf(tempStr,"-> h(%d;%d,%d,%d) = %g",x,N,n,k,h);
     outtext(tempStr);
     newLine();
     newLine();
 
-    sprintf(tempStr,"-> Mean = %.4f",mean);
+    sprintf(tempStr,"-> Mean = %g",mean);
     outtext(tempStr);
     newLine();
     newLine();
 
-    sprintf(tempStr,"-> Variance = %.4f",variance);
+    sprintf(tempStr,"-> Variance = %g",variance);
     outtext(tempStr);
 
     //get the button position
@@ -92,13 +107,18 @@ void Hyper_geo_dis()
         else if(xx>=50&&xx<=265 && yy>=y1+50&&yy<=y1+90)
         {
             closegraph();
+            probabilityMenu();
             break;
         }
         else if(xx>=50&&xx<=265 && yy>=y1+100&&yy<=y1+140)
         {
+            cleardevice();
+            settextstyle(BOLD_FONT,HORIZ_DIR,5);
+            setcolor(LIGHTGREEN);
+            outtextxy(getmaxx()/2-150,getmaxy()/2,"THANK YOU");
+            delay(2000);
             closegraph();
             exit(0);
-            break;
         }
         else continue;
     }

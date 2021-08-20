@@ -36,11 +36,13 @@
 		<Unit filename="GroupMenu.cpp" />
 		<Unit filename="Hmean_calculator.cpp" />
 		<Unit filename="Hyper_geo_dis.cpp" />
+		<Unit filename="PrintBinoResults.cpp" />
 		<Unit filename="RegPrintResults.cpp" />
 		<Unit filename="Sort.cpp" />
 		<Unit filename="UnGroupMenu.cpp" />
-		<Unit filename="bio_dis.cpp" />
+		<Unit filename="binomial_distribution.cpp" />
 		<Unit filename="calculate_b.cpp" />
+		<Unit filename="calculate_neg_bino_prob.cpp" />
 		<Unit filename="doCursor.cpp" />
 		<Unit filename="formulaSheetsMenu.cpp" />
 		<Unit filename="getGrString.cpp" />
@@ -62,10 +64,12 @@
 		<Unit filename="mode_calculator.cpp" />
 		<Unit filename="neg_bio_dis.cpp" />
 		<Unit filename="newLine.cpp" />
+		<Unit filename="poison_distribution_with_p.cpp" />
 		<Unit filename="printFDtable.cpp" />
 		<Unit filename="printFinalResults.cpp" />
 		<Unit filename="printFrequencyPolygon.cpp" />
 		<Unit filename="printHistogram.cpp" />
+		<Unit filename="printNegBinoResults.cpp" />
 		<Unit filename="printOgive.cpp" />
 		<Unit filename="printPieChart.cpp" />
 		<Unit filename="printScatterDiagram.cpp" />

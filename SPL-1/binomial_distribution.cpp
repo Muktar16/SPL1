@@ -1,12 +1,12 @@
-#include<graphics.h>
 #include"header.h"
+#include<graphics.h>
 
-void neg_bio_dis()
+void binomial_distribution()
 {
-    int n,X,sign;
+    int X,n,sign;
     float p;
     char tempStr[1000];
-    initGraph("Input for negative binomial distribution",0,0,-3,-3);
+    initGraph("Input for binomial distribution",0,0,-3,-3);
     moveto(0,0);
     newLine();
     newLine();
@@ -74,8 +74,8 @@ void neg_bio_dis()
             closegraph();
             //sign 1 means x = X selected
             sign=1;
-            //print negative binomial distribution results for x = X
-            printNegBinoResults(n,p,X,sign);
+            //print binomial distribution results for x = X
+            printBinoResults(n,p,X,sign);
             break;
         }
 
@@ -84,8 +84,9 @@ void neg_bio_dis()
             closegraph();
             //sign 2 means x < X selected
             sign=2;
-            //print negative binomial distribution results for x < X
-            printNegBinoResults(n,p,X,sign);
+            //print binomial distribution results for x < X
+            printBinoResults(n,p,X,sign);
+
             break;
         }
         else if(xx>=10&&xx<=205 && yy>=y+100&&yy<=y+140)
@@ -93,8 +94,8 @@ void neg_bio_dis()
             closegraph();
             //sign 3 means x > X selected
             sign=3;
-            //print negative binomial distribution results for x > X
-            printNegBinoResults(n,p,X,sign);
+            //print binomial distribution results for x > X
+            printBinoResults(n,p,X,sign);
             break;
         }
         else if(xx>=10&&xx<=205 && yy>=y+150&&yy<=y+190)
@@ -102,8 +103,8 @@ void neg_bio_dis()
             closegraph();
             //sign 4 means x <= X selected
             sign=4;
-            //print negative binomial distribution results for x <= X
-            printNegBinoResults(n,p,X,sign);
+            //print binomial distribution results for x <= X
+            printBinoResults(n,p,X,sign);
             break;
 
         }
@@ -112,8 +113,8 @@ void neg_bio_dis()
             closegraph();
             //sign 5 means x >= X selected
             sign=5;
-            //print negative binomial distribution results for x >= X
-            printNegBinoResults(n,p,X,sign);
+            //print binomial distribution results for x >= X
+            printBinoResults(n,p,X,sign);
             break;
         }
         else continue;

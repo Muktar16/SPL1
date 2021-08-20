@@ -38,18 +38,15 @@ void main_menu()
     outtextxy(930,515,"EXIT");
 
 
-    //get cursor position and take action
-    POINT position;
-    position.x=0;
-    position.y=0;
     int x=0,y=0;
-
     while(1)
     {
 
-        if(GetKeyState(VK_LBUTTON)&0x8000)  GetCursorPos(&position);
-        x = position.x;
-        y = position.y;
+        if(ismouseclick(WM_LBUTTONDOWN))
+        {
+            getmouseclick(WM_LBUTTONDOWN,x,y);
+        }
+
 
         if(x>=220&&x<=600 && y>=170&&y<=230)
         {
@@ -93,7 +90,7 @@ void main_menu()
             settextstyle(BOLD_FONT,HORIZ_DIR,5);
             setcolor(LIGHTGREEN);
             outtextxy(getmaxx()/2-150,getmaxy()/2,"THANK YOU");
-            delay(1000);
+            delay(2000);
             closegraph();
             exit(0);
         }

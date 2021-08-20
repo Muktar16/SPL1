@@ -10,7 +10,6 @@ void unGroupToGroupMenu()
 
     //opening a window to get input data values from user
     initGraph("Input data window",0,0,-3,-3);
-    settextstyle(10,HORIZ_DIR,2);
     setcolor(11);
 
     moveto(0,0);
@@ -51,7 +50,7 @@ void unGroupToGroupMenu()
     while(1)
     {
 
-        initGraph("Msin Menu Window",0,0,-3,-3);
+        initGraph("Options",0,0,-3,-3);
         setcolor(LIGHTCYAN);
         settextstyle(BOLD_FONT,HORIZ_DIR,5);
 
@@ -164,7 +163,13 @@ void unGroupToGroupMenu()
 
             else if(x>=500&&x<=905 && y>=610&&y<=650)
             {
-               exit(0);
+                cleardevice();
+                settextstyle(BOLD_FONT,HORIZ_DIR,5);
+                setcolor(LIGHTGREEN);
+                outtextxy(getmaxx()/2-150,getmaxy()/2,"THANK YOU");
+                delay(2000);
+                closegraph();
+                exit(0);
             }
 
             else
@@ -174,83 +179,4 @@ void unGroupToGroupMenu()
         }
     }
     return;
-
-
-//    system("cls||clear");
-//    int N,G;
-//
-//    printf("\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
-//    printf("\n\t\t\t\t\t\t\tENTER SAMPLE SIZE: ");
-//    scanf("%d",&N);
-//
-//    double Data[N];
-//
-//    printf("\n\t\t\t\t\t\t\tENTER EXACTLY %d VALUES WITH SPACE: ",N);
-//    for(int i=0; i<N; i++)
-//    {
-//        scanf("%lf",&Data[i]);
-//    }
-//    printf("\n\t\t\t\t\t\t\tENTER NUMBER GROUPS: ");
-//    scanf("%d",&G);
-//
-//    double LB[G],UB[G];
-//    int F[G];
-//
-//    unGroupToGroupConverter(Data,LB,UB,F,G,N);
-//
-//    while(1)
-//    {
-//        system("cls||clear");
-//        int ch;
-//        printf("\n\n\n\n\n\n\n\n");
-//        cout<<"\n\t\t\t\t\t\t\t\t1.Display Frequency Distribution Table"
-//            <<"\n\t\t\t\t\t\t\t\t2.Display Final Results"
-//            <<"\n\t\t\t\t\t\t\t\t3.Display Frequency Distribution Table and Final Results"
-//            <<"\n\t\t\t\t\t\t\t\t4.Display Frequency Polygon"
-//            <<"\n\t\t\t\t\t\t\t\t5.Display Ogive"
-//            <<"\n\t\t\t\t\t\t\t\t6.Back to Main Menu"
-//            <<"\n\t\t\t\t\t\t\t\t7.Exit"
-//            <<"\n\n\t\t\t\t\t\t\t\tEnter your Choice: ";
-//        cin>>ch;
-//
-//        switch(ch)
-//        {
-//        case 1:
-//            {
-//                system("cls||clear");
-//                printFDtable(LB,UB,F,G);
-//                cout<<"\n\n\t\t\t\t\t\t\tPress Any Key To Continue..............";
-//                _getch();
-//                break;
-//            }
-//        case 2:
-//            {
-//                system("cls||clear");
-//                printf("\n\n\n\n\n\n\n\n\n");
-//                printFinalResults(LB,UB,F,G);
-//                cout<<"\n\n\t\t\t\t\t\t\tPress Any Key To Continue..............";
-//                _getch();
-//                break;
-//            }
-//        case 3:
-//            {
-//                system("cls||clear");
-//                printFDtable(LB,UB,F,G);
-//                printf("\n\n\n");
-//                printFinalResults(LB,UB,F,G);
-//                cout<<"\n\n\t\t\t\t\t\t\tPress Any Key To Continue..............";
-//                _getch();
-//                break;
-//            }
-//        case 6:
-//            {
-//                system("cls||clear");
-//                return;
-//            }
-//        case 7:
-//            {
-//                exit(0);
-//            }
-//        }
-//    }
 }

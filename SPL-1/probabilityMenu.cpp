@@ -3,7 +3,7 @@
 
 void probabilityMenu()
 {
-    initGraph("Main Menu Window",0,0,-3,-3);
+    initGraph("Probability Menu Window",0,0,-3,-3);
     settextstyle(10,HORIZ_DIR,5);
 
     setcolor(5);
@@ -34,28 +34,23 @@ void probabilityMenu()
     outtextxy(940,515,"EXIT");
 
 
-    delay(500);
-    POINT position;
-    position.x=0;
-    position.y=0;
-    int x,y;
+    int x=0,y=0;
 
     while(1)
     {
-        if(GetKeyState(VK_LBUTTON)&0x8000)  GetCursorPos(&position);
-        x = position.x;
-        y = position.y;
+        if(ismouseclick(WM_LBUTTONDOWN)) getmouseclick(WM_LBUTTONDOWN,x,y);
+
 
         if(x>=220&&x<=600 && y>=170&&y<=230)
         {
             closegraph();
-            bio_dis();
+            binomial_distribution();
             break;
         }
         else if(x>=220&&x<=600 && y>=270&&y<=330)
         {
             closegraph();
-            //pois_dis_p_given();
+            //poison_distribution_with_p();
             break;
         }
         else if(x>=220&&x<=600 && y>=380&&y<=440)
@@ -90,12 +85,13 @@ void probabilityMenu()
         }
         else if(x>=780&&x<=1160 && y>=500&&y<=560)
         {
+            cleardevice();
+            settextstyle(BOLD_FONT,HORIZ_DIR,5);
+            setcolor(LIGHTGREEN);
+            outtextxy(getmaxx()/2-150,getmaxy()/2,"THANK YOU");
+            delay(2000);
             closegraph();
-            int height=250,width=400;
-            initwindow(width,height,"Exiting",500,200);
-            settextstyle(8,HORIZ_DIR,3);
-            outtextxy(140,100,"THANK YOU");
-            delay(5000);
+            exit(0);
 
         }
         else

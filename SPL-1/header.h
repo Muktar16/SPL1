@@ -49,12 +49,15 @@ void printScatterDiagram(double* X,double *Y,int n,double r);
 double sb1_calculator(double* X,double* Y,int n);
 
 void probabilityMenu();
-void bio_dis();
+void binomial_distribution();
+void printBinoResults(int n,float p,int X,int sign);
 void pois_dis_p_given();
 double calculate_b(int n,int x,double p);
 void Hyper_geo_dis();
 int combination_nCr(int n,int r);
 void neg_bio_dis();
+float calculate_neg_bino_prob(int n,int X,float P);
+void printNegBinoResults(int n,float p,int X,int sign);
 void intermediateMenu();
 
 void graphMenu();
