@@ -8,9 +8,16 @@ void printBinoResults(int n,float p,int X,int sign)
     setcolor(LIGHTMAGENTA);
     settextstyle(8,HORIZ_DIR,2);
     char tempStr[1000];
-    float mean=n*p;
+
+    //calculations
     float prob=0;
-    float variance=n*p*(1-p);
+    float q=1-p;
+    float mean=n*p;
+    float variance=n*p*q;
+    float fmode=(n+1)*p;
+    int mode=int(fmode);
+    float sk = (1-2*p)/(n*p*q);//skewness
+    float kurt = 3 + (1-6*p*q)/(n*p*q);//kurtosis
 
 
     if(sign==1)
@@ -110,26 +117,88 @@ void printBinoResults(int n,float p,int X,int sign)
     //print mean,variance and standard deviation
     newLine();
     newLine();
+    //print mean
     sprintf(tempStr,"                                       => Mean = %g",mean);
     outtext(tempStr);
     newLine();
+    //print variance
     sprintf(tempStr,"                                       => Variance = %g",variance);
     outtext(tempStr);
     newLine();
+    //print standard deviation
     sprintf(tempStr,"                                       => Standard Deviation = %g",sqrt(variance));
     outtext(tempStr);
+    newLine();
+    //print mode
+    if(fmode>mode)
+    {
+        sprintf(tempStr,"                                       => Mode = %d (Unimodal)",mode);
+        outtext(tempStr);
+        newLine();
+    }
+    else
+    {
+        sprintf(tempStr,"                                       => Mode = %d and %d (Bimodal)",mode-1,mode);
+        outtext(tempStr);
+        newLine();
+    }
 
-     int y1=gety()+100;
+    //print skewness
+    if(sk==0)
+    {
+        sprintf(tempStr,"                                       => Skewness (Beta-1) = %g (Symmetric distribution)",sk);
+        outtext(tempStr);
+        newLine();
+    }
+    else if(sk>0)
+    {
+        sprintf(tempStr,"                                       => Skewness (Beta-1) = %g (Positively skewed)",sk);
+        outtext(tempStr);
+        newLine();
+    }
+    else
+    {
+        sprintf(tempStr,"                                       => Skewness (Beta-1) = %g (Negatively skewed)",sk);
+        outtext(tempStr);
+        newLine();
+    }
+
+    //print kurtosis(Beta 2)
+    if(kurt==3)
+    {
+        sprintf(tempStr,"                                       => Kurtosis (Beta-2) = %g (Mesokurtic)",kurt);
+        outtext(tempStr);
+        newLine();
+    }
+    else if(kurt>3)
+    {
+        sprintf(tempStr,"                                       => Kurtosis (Beta-2) = %g (Leptokurtic)",kurt);
+        outtext(tempStr);
+        newLine();
+    }
+    else
+    {
+        sprintf(tempStr,"                                       => Kurtosis (Beta-2) = %g (Platykurtic)",kurt);
+        outtext(tempStr);
+        newLine();
+    }
+    //print coefficient of skewness and kurtosis
+    sprintf(tempStr,"                                       => coefficient of skewness (gamma-1) = %g",sqrt(sk));
+    outtext(tempStr);
+    newLine();
+    sprintf(tempStr,"                                       => coefficient of kurtosis (gamma-2) = %g",kurt-3);
+    outtext(tempStr);
+    newLine();
 
 
     //make 3 buttons with rectangle
+    int y1=gety()+100;
     setcolor(DARKGRAY);
     rectangle(550,y1,765,y1+30);
     rectangle(550,y1+50,765,y1+80);
     rectangle(550,y1+100,765,y1+130);
     //button text
     setcolor(LIGHTRED);
-    //settextstyle(10,HORIZ_DIR,2);
     outtextxy(555,y1+5,"ANOTHER OPERATION");
     outtextxy(555,y1+55,"      BACK");
     outtextxy(555,y1+105,"      EXIT");

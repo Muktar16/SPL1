@@ -442,11 +442,11 @@
 	<stdio.h>
 	"header.h"
 
-1629437954 source:\\mac\home\desktop\muktar\c and c++\spl-1\main_menu.cpp
+1629542725 source:\\mac\home\desktop\muktar\c and c++\spl-1\main_menu.cpp
 	<graphics.h>
 	"header.h"
 
-1629483067 \\mac\home\desktop\muktar\c and c++\spl-1\header.h
+1629580730 \\mac\home\desktop\muktar\c and c++\spl-1\header.h
 	<math.h>
 	<stdlib.h>
 	<stdio.h>
@@ -494,7 +494,7 @@
 1627158188 source:\\mac\home\desktop\muktar\c and c++\spl-1\docursor.cpp
 	<graphics.h>
 
-1629441366 source:\\mac\home\desktop\muktar\c and c++\spl-1\formulasheetsmenu.cpp
+1629540614 source:\\mac\home\desktop\muktar\c and c++\spl-1\formulasheetsmenu.cpp
 	"header.h"
 	<graphics.h>
 
@@ -525,14 +525,14 @@
 1627158188 source:\\mac\home\desktop\muktar\c and c++\spl-1\hmean_calculator.cpp
 	"header.h"
 
-1629447640 source:\\mac\home\desktop\muktar\c and c++\spl-1\hyper_geo_dis.cpp
+1629580730 source:\\mac\home\desktop\muktar\c and c++\spl-1\hyper_geo_dis.cpp
 	"header.h"
 	<graphics.h>
 
 1627158188 source:\\mac\home\desktop\muktar\c and c++\spl-1\initgraph.cpp
 	<graphics.h>
 
-1629394634 source:\\mac\home\desktop\muktar\c and c++\spl-1\main_function.cpp
+1629506967 source:\\mac\home\desktop\muktar\c and c++\spl-1\main_function.cpp
 	"header.h"
 
 1627158188 source:\\mac\home\desktop\muktar\c and c++\spl-1\max_min_calculator.cpp
@@ -566,7 +566,7 @@
 	<graphics.h>
 	"header.h"
 
-1629483084 source:\\mac\home\desktop\muktar\c and c++\spl-1\probabilitymenu.cpp
+1629542725 source:\\mac\home\desktop\muktar\c and c++\spl-1\probabilitymenu.cpp
 	"header.h"
 	<graphics.h>
 
@@ -604,7 +604,7 @@
 1627158188 source:\\mac\home\desktop\muktar\c and c++\spl-1\combination_ncr.cpp
 	<math.h>
 
-1629483891 source:\\mac\home\desktop\muktar\c and c++\spl-1\neg_bio_dis.cpp
+1629574998 source:\\mac\home\desktop\muktar\c and c++\spl-1\neg_bio_dis.cpp
 	<graphics.h>
 	"header.h"
 
@@ -615,7 +615,7 @@
 1629390550 source:\\mac\home\desktop\muktar\c and c++\spl-1\intermediatemenu.cpp
 	"header.h"
 
-1629453741 source:\\mac\home\desktop\muktar\c and c++\spl-1\printbinoresults.cpp
+1629570525 source:\\mac\home\desktop\muktar\c and c++\spl-1\printbinoresults.cpp
 	"header.h"
 	<graphics.h>
 
@@ -623,12 +623,38 @@
 	"header.h"
 	<graphics.h>
 
-1629482776 source:\\mac\home\desktop\muktar\c and c++\spl-1\calculate_neg_bino_prob.cpp
+1629488377 source:\\mac\home\desktop\muktar\c and c++\spl-1\calculate_neg_bino_prob.cpp
 	<math.h>
 
 1629476770 source:\\mac\home\desktop\muktar\c and c++\spl-1\poison_distribution_with_p.cpp
 
-1629483891 source:\\mac\home\desktop\muktar\c and c++\spl-1\printnegbinoresults.cpp
+1629575266 source:\\mac\home\desktop\muktar\c and c++\spl-1\printnegbinoresults.cpp
+	<graphics.h>
+	"header.h"
+
+1629501129 source:\\mac\home\desktop\muktar\c and c++\spl-1\fcalculate_geometric_probability.cpp
+	<math.h>
+
+1629501156 source:\\mac\home\desktop\muktar\c and c++\spl-1\geometric_distribution.cpp
+	"header.h"
+	<graphics.h>
+
+1629574435 source:\\mac\home\desktop\muktar\c and c++\spl-1\printgeometricresults.cpp
+	<graphics.h>
+	"header.h"
+
+1629514015 source:\\mac\home\desktop\muktar\c and c++\spl-1\calculate_pois_dist_prob.cpp
+	<math.h>
+
+1629523126 source:\\mac\home\desktop\muktar\c and c++\spl-1\poison_distribution_with_u.cpp
+	<graphics.h>
+	"header.h"
+
+1629549821 source:\\mac\home\desktop\muktar\c and c++\spl-1\printpoissionresults.cpp
+	"header.h"
+	<graphics.h>
+
+1629570967 source:\\mac\home\desktop\muktar\c and c++\spl-1\poission_distribution.cpp
 	<graphics.h>
 	"header.h"
 

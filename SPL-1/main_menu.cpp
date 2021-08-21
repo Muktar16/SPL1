@@ -17,7 +17,7 @@ void main_menu()
     settextstyle(10,HORIZ_DIR,3);
     setcolor(8);
     //making buttons for each option
-    rectangle(220,170,600,220);//ungrouped data
+    rectangle(220,170,600,220);//UNGROUPED DATA
     rectangle(220,270,600,320);//GROUPED DATA
     rectangle(220,370,600,450);//UNGROUPED TO GROUPED DATA CONVERTER
     rectangle(780,170,1160,220);//REGRESSION & CO-RELATION

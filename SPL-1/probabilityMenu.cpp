@@ -24,7 +24,7 @@ void probabilityMenu()
     setcolor(8);
     settextstyle(10,HORIZ_DIR,2);
     outtextxy(290,185,"BINOMIAL DISTRIBUTION");
-    outtextxy(235,285,"POISSION DISTRIBUTION(P given)");
+    outtextxy(235,285,"POISSION DISTRIBUTION(p given)");
     outtextxy(235,395,"POISSION DISTRIBUTION(u given)");
     outtextxy(280,515,"GEOMETRIC DISTRIBUTION");
     outtextxy(790,185,"NEGATIVE BINOMIAL DISTRIBUTION");
@@ -50,19 +50,19 @@ void probabilityMenu()
         else if(x>=220&&x<=600 && y>=270&&y<=330)
         {
             closegraph();
-            //poison_distribution_with_p();
+            poison_distribution(1);//here 1 means p and n are given
             break;
         }
         else if(x>=220&&x<=600 && y>=380&&y<=440)
         {
             closegraph();
-            //pois_disU();
+            poison_distribution(2);//here 2 means u is given
             break;
         }
         else if(x>=220&&x<=600 && y>=500&&y<=560)
         {
             closegraph();
-            //geo_dis();
+            geometric_distribution();
             break;
         }
         else if(x>=780&&x<=1160 && y>=170&&y<=230)

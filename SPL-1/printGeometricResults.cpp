@@ -1,113 +1,113 @@
 #include<graphics.h>
 #include"header.h"
 
-void printNegBinoResults(int r,float p,int X,int sign)
+void printGeometricResults(float p,int x,int sign)
 {
     //initialize a window for printing results
-    initGraph("The result of Negative Binomial Distribution",0,0,-3,-3);
+    initGraph("The result of Geometric Distribution",0,0,-3,-3);
     setcolor(LIGHTMAGENTA);
     settextstyle(8,HORIZ_DIR,2);
     char tempStr[1000];
-    float q=1-p;
-    float mean=(r*q)/p;
+    float mean=1/p;
     float prob=0;
-    float variance=(r*q)/(p*p);
-    float sk=((1+q)*(1+q))/(r*q);//skewness
-    float kurt = (1+4*q+q*q)/(r*q);//kurtosis
+    float q=1-p;//probability of failure in a trial
+    float variance=(1-p)/(p*p);
+    float sk=(1+q)*(1+q)/q;//skewness
+    float kurt=(1+7*q+q*q)/q;//kurtosis
 
 
     if(sign==1)
     {
-        prob=calculate_neg_bino_prob(r,X,p);//calculate probability
+        prob=calculate_geometric_probability(x,p);//calculate probability
         newLine();
         newLine();
-        sprintf(tempStr,"                                       The result of negative Binomial Distribution ");
+        sprintf(tempStr,"                                       The result of Geometric  ");
         outtext(tempStr);
         newLine();
-        sprintf(tempStr,"                                       for X=%d, r=%d, and p=%g",X,r,p);
+        sprintf(tempStr,"                                       Distribution for x=%d and p=%g",x,p);
         outtext(tempStr);
         newLine();
         newLine();
         newLine();
         setcolor(LIGHTCYAN);
-        sprintf(tempStr,"                                       => P( X = %d ) = %0.4f",X,prob);
+        sprintf(tempStr,"                                       => P( x = %d ) = %g",x,prob);
         outtext(tempStr);
     }
     else if(sign==2)
     {
-        for(int i=r;i<X;i++)  prob+=calculate_neg_bino_prob(r,i,p);//calculate probability
+        for(int i=1;i<x;i++)  prob+=calculate_geometric_probability(i,p);
         newLine();
         newLine();
-        sprintf(tempStr,"                                       The result of negative Binomial Distribution ");
+        sprintf(tempStr,"                                       The result of Geometric ");
         outtext(tempStr);
         newLine();
-        sprintf(tempStr,"                                       for X<%d, r=%d, and p=%g",X,r,p);
+        sprintf(tempStr,"                                       Distribution for x<%d and p=%g",x,p);
         outtext(tempStr);
         newLine();
         newLine();
         newLine();
         setcolor(LIGHTCYAN);
-        sprintf(tempStr,"                                       => P( X < %d ) = %g",X,prob);
+        sprintf(tempStr,"                                       => P( x < %d ) = %g",x,prob);
         outtext(tempStr);
     }
     else if(sign==3)
     {
         double prob=0;
-        for(int i=r;i<=X;i++) prob+=calculate_neg_bino_prob(r,i,p);//calculate P(X<=x)
-        prob=1.0-prob;//as P(X>x) = 1-P(X=<x)
+        for(int i=1;i<=x;i++) prob+=calculate_geometric_probability(i,p);
+        prob=1.0-prob;//as P(X>x)=1-P(X<=x)
         cleardevice();
         newLine();
         newLine();
-        sprintf(tempStr,"                                       The result of negative Binomial Distribution");
+        sprintf(tempStr,"                                       The result of Geometric ");
         outtext(tempStr);
         newLine();
-        sprintf(tempStr,"                                       for X>%d, r=%d, and p=%g",X,r,p);
+        sprintf(tempStr,"                                       Distribution for x>%d and p=%g",x,p);
         outtext(tempStr);
         newLine();
         newLine();
         newLine();
         setcolor(LIGHTCYAN);
-        sprintf(tempStr,"                                       => P( X > %d ) = %g",X,prob);
+        sprintf(tempStr,"                                       => P( x > %d ) = %g",x,prob);
         outtext(tempStr);
 
     }
     else if(sign==4)
     {
         double prob=0;
-        for(int i=r;i<=X;i++)   prob += calculate_neg_bino_prob(r,i,p);//calculate probability
+        for(int i=1;i<=x;i++)   prob += calculate_geometric_probability(i,p);
         cleardevice();
         newLine();
         newLine();
-        sprintf(tempStr,"                                       The result of negative Binomial Distribution");
+        sprintf(tempStr,"                                       The result of Geometric ");
         outtext(tempStr);
         newLine();
-        sprintf(tempStr,"                                       for X<=%d, r=%d, and p=%g",X,r,p);
+        sprintf(tempStr,"                                       Distribution for x<=%d and p=%g",x,p);
         outtext(tempStr);
         newLine();
         newLine();
         newLine();
         setcolor(LIGHTCYAN);
-        sprintf(tempStr,"                                       => P( X <= %d ) = %g",X,prob);
+        sprintf(tempStr,"                                       => P( x <= %d ) = %g",x,prob);
         outtext(tempStr);
     }
     else
     {
         double prob=0;
-        for(int i=r;i<X;i++)   prob += calculate_neg_bino_prob(r,i,p);//calculate probability
-        prob=1.0-prob;//as P(X>=x) = 1-P(X<x)
+        for(int i=1;i<x;i++)   prob += calculate_geometric_probability(i,p);
+        prob=1.0-prob;//as P(X>=x) = 1- P(X<x)
         cleardevice();
         newLine();
         newLine();
-        sprintf(tempStr,"                                       The result of negative Binomial Distribution");
+        sprintf(tempStr,"                                       The result of Geometric ");
         outtext(tempStr);
         newLine();
-        sprintf(tempStr,"                                       for X>=%d, r=%d, and p=%g",X,r,p);
+        sprintf(tempStr,"                                       Distribution for x>=%d and p=%g",x,p);
         outtext(tempStr);
         newLine();
         newLine();
         newLine();
         setcolor(LIGHTCYAN);
-        sprintf(tempStr,"                                        => P( X >= %d ) = %g",X,prob);
+        sprintf(tempStr,"                                        => P( x >= %d ) = %g",x,prob);
         outtext(tempStr);
     }
 
@@ -125,15 +125,50 @@ void printNegBinoResults(int r,float p,int X,int sign)
     outtext(tempStr);
     newLine();
 
-    //print skewness
-    sprintf(tempStr,"                                       => Skewness (Beta 1) = %g (always positively skewed)",sk);
-    outtext(tempStr);
-    newLine();
-    //print kurtosis(Beta 2)
-    sprintf(tempStr,"                                       => Kurtosis (Beta 2) = %g (always leptokurtic)",kurt);
+    //print mode
+    sprintf(tempStr,"                                       => Mode = 0 ");
     outtext(tempStr);
     newLine();
 
+    //print skewness
+    if(sk==0)
+    {
+        sprintf(tempStr,"                                       => Skewness (Beta 1) = %g (Symmetric distribution)",sk);
+        outtext(tempStr);
+        newLine();
+    }
+    else if(sk>0)
+    {
+        sprintf(tempStr,"                                       => Skewness (Beta 1) = %g (Positively skewed)",sk);
+        outtext(tempStr);
+        newLine();
+    }
+    else
+    {
+        sprintf(tempStr,"                                       => Skewness (Beta 1) = %g (Negatively skewed)",sk);
+        outtext(tempStr);
+        newLine();
+    }
+
+    //print kurtosis(Beta 2)
+    if(kurt==3)
+    {
+        sprintf(tempStr,"                                       => Kurtosis (Beta 2) = %g (Mesokurtic)",kurt);
+        outtext(tempStr);
+        newLine();
+    }
+    else if(kurt>3)
+    {
+        sprintf(tempStr,"                                       => Kurtosis (Beta 2) = %g (Leptokurtic)",kurt);
+        outtext(tempStr);
+        newLine();
+    }
+    else
+    {
+        sprintf(tempStr,"                                       => Kurtosis (Beta 2) = %g (Platykurtic)",kurt);
+        outtext(tempStr);
+        newLine();
+    }
     //print coefficient of skewness and kurtosis
     sprintf(tempStr,"                                       => coefficient of skewness = %g",sqrt(sk));
     outtext(tempStr);
@@ -141,7 +176,6 @@ void printNegBinoResults(int r,float p,int X,int sign)
     sprintf(tempStr,"                                       => coefficient of kurtosis = %g",kurt-3);
     outtext(tempStr);
     newLine();
-
 
     //make 3 buttons with rectangle
     int y1=gety()+100;
@@ -167,7 +201,7 @@ void printNegBinoResults(int r,float p,int X,int sign)
         if(xx>=550&&xx<=765 && yy>=y1&&yy<=y1+40)
         {
             closegraph();
-            neg_bio_dis();
+            geometric_distribution();
             break;
         }
         else if(xx>=550&&xx<=765 && yy>=y1+50&&yy<=y1+90)
