@@ -117,19 +117,19 @@ void Hyper_geo_dis()
         xx = position.x;
         yy = position.y;
 
-        if(xx>=50&&xx<=265 && yy>=y1&&yy<=y1+40)
+        if(xx>=550&&xx<=765 && yy>=y1&&yy<=y1+40)
         {
             closegraph();
             Hyper_geo_dis();
             break;
         }
-        else if(xx>=50&&xx<=265 && yy>=y1+50&&yy<=y1+90)
+        else if(xx>=550&&xx<=765 && yy>=y1+50&&yy<=y1+90)
         {
             closegraph();
             probabilityMenu();
             break;
         }
-        else if(xx>=50&&xx<=265 && yy>=y1+100&&yy<=y1+140)
+        else if(xx>=550&&xx<=765 && yy>=y1+100&&yy<=y1+140)
         {
             cleardevice();
             settextstyle(BOLD_FONT,HORIZ_DIR,5);

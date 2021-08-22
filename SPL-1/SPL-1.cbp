@@ -41,10 +41,10 @@
 		<Unit filename="UnGroupMenu.cpp" />
 		<Unit filename="binomial_distribution.cpp" />
 		<Unit filename="calculate_b.cpp" />
+		<Unit filename="calculate_geometric_probability.cpp" />
 		<Unit filename="calculate_neg_bino_prob.cpp" />
 		<Unit filename="calculate_pois_dist_prob.cpp" />
 		<Unit filename="doCursor.cpp" />
-		<Unit filename="fcalculate_geometric_probability.cpp" />
 		<Unit filename="formulaSheetsMenu.cpp" />
 		<Unit filename="geometric_distribution.cpp" />
 		<Unit filename="getGrString.cpp" />
@@ -80,7 +80,6 @@
 		<Unit filename="printScatterDiagram.cpp" />
 		<Unit filename="probabilityMenu.cpp" />
 		<Unit filename="qt_calculator.cpp" />
-		<Unit filename="read_file.cpp" />
 		<Unit filename="sb1_calculator.cpp" />
 		<Unit filename="sum.cpp" />
 		<Unit filename="sum_square.cpp" />

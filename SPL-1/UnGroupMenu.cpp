@@ -97,11 +97,13 @@ void unGroupMenu()
     Max_min = max_min_calculator(Data,dataNum);
     Median = median_calculator(Data2,dataNum);
     int x1,y1;
+    double q1=qt_calculator(Data2,dataNum,1);
+    double q3=qt_calculator(Data2,dataNum,3);
 
     sprintf(tempStr,"-> MINIMUM VALUE      = %.2f",Max_min[1]);
     outtext(tempStr);
     newLine();
-    sprintf(tempStr,"-> 1st QUARTILE       = %.2f",qt_calculator(Data2,dataNum,1));
+    sprintf(tempStr,"-> 1st QUARTILE       = %.2f",q1);
     outtext(tempStr);
     x1=getx()+200;//get the button position
     y1=gety();
@@ -109,7 +111,10 @@ void unGroupMenu()
     sprintf(tempStr,"-> MEDIAN             = %.2f",Median);
     outtext(tempStr);
     newLine();
-    sprintf(tempStr,"-> 3rd QUARTILE       = %.2f",qt_calculator(Data2,dataNum,3));
+    sprintf(tempStr,"-> 3rd QUARTILE       = %.2f",q3);
+    outtext(tempStr);
+    newLine();
+    sprintf(tempStr,"-> I.Q.R              = %.2f",q3-q1);
     outtext(tempStr);
     newLine();
     sprintf(tempStr,"-> MAXIMUM VALUE      = %.2f",Max_min[0]);

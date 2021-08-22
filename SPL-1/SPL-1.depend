@@ -446,7 +446,7 @@
 	<graphics.h>
 	"header.h"
 
-1629580730 \\mac\home\desktop\muktar\c and c++\spl-1\header.h
+1629610919 \\mac\home\desktop\muktar\c and c++\spl-1\header.h
 	<math.h>
 	<stdlib.h>
 	<stdio.h>
@@ -458,7 +458,7 @@
 	<stdio.h>
 	"header.h"
 
-1629438137 source:\\mac\home\desktop\muktar\c and c++\spl-1\ungroupmenu.cpp
+1629602125 source:\\mac\home\desktop\muktar\c and c++\spl-1\ungroupmenu.cpp
 	"header.h"
 	<graphics.h>
 
@@ -494,7 +494,7 @@
 1627158188 source:\\mac\home\desktop\muktar\c and c++\spl-1\docursor.cpp
 	<graphics.h>
 
-1629540614 source:\\mac\home\desktop\muktar\c and c++\spl-1\formulasheetsmenu.cpp
+1629605429 source:\\mac\home\desktop\muktar\c and c++\spl-1\formulasheetsmenu.cpp
 	"header.h"
 	<graphics.h>
 
@@ -525,7 +525,7 @@
 1627158188 source:\\mac\home\desktop\muktar\c and c++\spl-1\hmean_calculator.cpp
 	"header.h"
 
-1629580730 source:\\mac\home\desktop\muktar\c and c++\spl-1\hyper_geo_dis.cpp
+1629595716 source:\\mac\home\desktop\muktar\c and c++\spl-1\hyper_geo_dis.cpp
 	"header.h"
 	<graphics.h>
 
@@ -591,11 +591,11 @@
 1627158188 source:\\mac\home\desktop\muktar\c and c++\spl-1\ungrouptogroupconverter.cpp
 	"header.h"
 
-1629439770 source:\\mac\home\desktop\muktar\c and c++\spl-1\ungrouptogroupmenu.cpp
+1629609340 source:\\mac\home\desktop\muktar\c and c++\spl-1\ungrouptogroupmenu.cpp
 	"header.h"
 	<graphics.h>
 
-1627158188 source:\\mac\home\desktop\muktar\c and c++\spl-1\variance_calculator.cpp
+1629607399 source:\\mac\home\desktop\muktar\c and c++\spl-1\variance_calculator.cpp
 	"header.h"
 
 1626546592 source:\\mac\home\desktop\muktar\c and c++\spl-1\calculate_h.cpp
@@ -657,4 +657,10 @@
 1629570967 source:\\mac\home\desktop\muktar\c and c++\spl-1\poission_distribution.cpp
 	<graphics.h>
 	"header.h"
+
+1629580824 source:\\mac\home\desktop\muktar\c and c++\spl-1\hypergeoprobcalculator.cpp
+	<math.h>
+
+1629606654 source:\\mac\home\desktop\muktar\c and c++\spl-1\calculate_geometric_probability.cpp
+	<math.h>
 

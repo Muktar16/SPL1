@@ -17,9 +17,8 @@ void formulaSheetsMenu()
         rectangle(500,170,800,210);//GROUPED DATA
         rectangle(500,240,800,280);//REGRESSION & CO-RELATION
         rectangle(500,310,800,350);//PROBABILITY DISTRIBUTION
-        rectangle(500,380,800,420);//ALL FORMULA SHEETS
-        rectangle(500,450,800,490);//BACK TO MAIN MENU
-        rectangle(500,520,800,560);//EXIT
+        rectangle(500,380,800,420);//ACK TO MAIN MENU
+        rectangle(500,450,800,490);//EXIT
 
 
         setcolor(LIGHTBLUE);
@@ -29,10 +28,9 @@ void formulaSheetsMenu()
         outtextxy(505,180,"      GROUPED DATA");
         outtextxy(505,250,"REGRESSION & CO-RELATION");
         outtextxy(505,320,"PROBABILITY DISTRIBUTION");
-        outtextxy(505,390,"   ALL FORMULA SHEETS");
-        outtextxy(505,460,"    BACK TO MAIN MENU");
+        outtextxy(505,390,"    BACK TO MAIN MENU");
         setcolor(RED);
-        outtextxy(505,530,"          EXIT");
+        outtextxy(505,460,"          EXIT");
 
 
         POINT position;
@@ -48,61 +46,65 @@ void formulaSheetsMenu()
 
             if(x>=500&&x<=800 && y>=100&&y<=150)
             {
-                cleardevice();
-                readimagefile("formulasheet1.jpg",400,0,1100,850);
+                closegraph();
+                initGraph("Grouped Data Formula",870,850,300,0);
+                readimagefile("ungroupedData.jpg",0,0,870,830);
+                settextstyle(8,HORIZ_DIR,2);
+                setbkcolor(WHITE);
+                setcolor(LIGHTRED);
+                outtextxy(250,780,"Press Any Key to get Back........");
                 getch();
-
-//                closegraph();
-//                system("cls||clear");
-//                read_file("formula_sheet_1.txt");
-//                cout<<"\n\n\t\t\t\t\t\t\tPress Any Key To Continue..............";
-//                _getch();
+                closegraph();
                 break;
             }
             else if(x>=500&&x<=800 && y>=170&&y<=220)
             {
                 closegraph();
-                system("cls||clear");
-                read_file("formula_sheet_2.txt");
-                cout<<"\n\n\t\t\t\t\t\t\tPress Any Key To Continue..............";
-                _getch();
+                initGraph("Grouped Data Formula",870,850,300,0);
+                readimagefile("groupedData.jpg",0,0,870,830);
+                settextstyle(8,HORIZ_DIR,2);
+                setbkcolor(WHITE);
+                setcolor(LIGHTRED);
+                outtextxy(250,780,"Press Any Key to get Back........");
+                getch();
                 break;
             }
             else if(x>=500&&x<=800 && y>=240&&y<=290)
             {
                 closegraph();
-                system("cls||clear");
-                read_file("formula_sheet_3.txt");
-                cout<<"\n\n\t\t\t\t\t\t\tPress Any Key To Continue..............";
-                _getch();
+                initGraph("Grouped Data Formula",870,850,300,0);
+                readimagefile("correlation.jpg",0,0,870,830);
+                settextstyle(8,HORIZ_DIR,2);
+                setbkcolor(WHITE);
+                setcolor(LIGHTRED);
+                outtextxy(250,780,"Press Any Key to get Back........");
+                getch();
+                closegraph();
                 break;
             }
             else if(x>=500&&x<=800 && y>=310&&y<=360)
             {
                 closegraph();
-                system("cls||clear");
-                read_file("formula_sheet_4.txt");
-                cout<<"\n\n\t\t\t\t\t\t\tPress Any Key To Continue..............";
-                _getch();
+
+                initGraph("Grouped Data Formula",0,0,-3,-3);
+                int x = getmaxx();
+                int y = getmaxy();
+                readimagefile("probability.jpg",0,0,x,y);
+                settextstyle(8,HORIZ_DIR,2);
+                setbkcolor(WHITE);
+                setcolor(LIGHTRED);
+                outtextxy(450,800,"Press Any Key to get Back........");
+                getch();
+                closegraph();
                 break;
             }
             else if(x>=500&&x<=800 && y>=380&&y<=430)
             {
                 closegraph();
-                system("cls||clear");
-                read_file("formula_sheet_5.txt");
-                cout<<"\n\n\t\t\t\t\t\t\tPress Any Key To Continue..............";
-                _getch();
+                return;
                 break;
             }
             else if(x>=500&&x<=800 && y>=450&&y<=500)
-            {
-                closegraph();
-                return;
-                break;
-
-            }
-            else if(x>=500&&x<=800 && y>=520&&y<=570)
             {
                 cleardevice();
                 settextstyle(BOLD_FONT,HORIZ_DIR,5);
@@ -112,8 +114,8 @@ void formulaSheetsMenu()
                 closegraph();
                 exit(0);
                 break;
-            }
 
+            }
             else
             {
                 continue;

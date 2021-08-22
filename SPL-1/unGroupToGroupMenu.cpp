@@ -34,7 +34,7 @@ void unGroupToGroupMenu()
             i=i+1;
         }
     }
-    N=i;
+    N=i;//total number of data values
 
     newLine();
     newLine();
@@ -42,8 +42,10 @@ void unGroupToGroupMenu()
     getGrString(tempStr);
     G=atoi(tempStr);
 
+    //lower boundaries, upper boundaries, and frequency
     double LB[G],UB[G];
     int F[G];
+    //convert to grouped data
     unGroupToGroupConverter(Data,LB,UB,F,G,N);
 
 
