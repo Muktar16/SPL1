@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="SPL-1" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/SPL-1" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/SPL-1" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Unit filename="CoRelationAndRegressionMenu.cpp" />
+		<Unit filename="GroupMenu.cpp" />
+		<Unit filename="Hmean_calculator.cpp" />
+		<Unit filename="Hyper_geo_dis.cpp" />
+		<Unit filename="PrintBinoResults.cpp" />
+		<Unit filename="RegPrintResults.cpp" />
+		<Unit filename="Sort.cpp" />
+		<Unit filename="UnGroupMenu.cpp" />
+		<Unit filename="binomial_distribution.cpp" />
+		<Unit filename="calculate_b.cpp" />
+		<Unit filename="calculate_geometric_probability.cpp" />
+		<Unit filename="calculate_neg_bino_prob.cpp" />
+		<Unit filename="calculate_pois_dist_prob.cpp" />
+		<Unit filename="doCursor.cpp" />
+		<Unit filename="formulaSheetsMenu.cpp" />
+		<Unit filename="geometric_distribution.cpp" />
+		<Unit filename="getGrString.cpp" />
+		<Unit filename="gmean_calculator.cpp" />
+		<Unit filename="group_gmean_calculator.cpp" />
+		<Unit filename="group_hmean_calculator.cpp" />
+		<Unit filename="group_mean_claculator.cpp" />
+		<Unit filename="group_median_calculator.cpp" />
+		<Unit filename="group_mode_calculator.cpp" />
+		<Unit filename="group_variance_calculator.cpp" />
+		<Unit filename="header.h" />
+		<Unit filename="hyperGeoProbCalculator.cpp" />
+		<Unit filename="initGraph.cpp" />
+		<Unit filename="main_function.cpp" />
+		<Unit filename="main_menu.cpp" />
+		<Unit filename="max_min_calculator.cpp" />
+		<Unit filename="mean_calculator.cpp" />
+		<Unit filename="median_calculator.cpp" />
+		<Unit filename="mode_calculator.cpp" />
+		<Unit filename="neg_bio_dis.cpp" />
+		<Unit filename="newLine.cpp" />
+		<Unit filename="poission_distribution.cpp" />
+		<Unit filename="printFDtable.cpp" />
+		<Unit filename="printFinalResults.cpp" />
+		<Unit filename="printFrequencyPolygon.cpp" />
+		<Unit filename="printGeometricResults.cpp" />
+		<Unit filename="printHistogram.cpp" />
+		<Unit filename="printNegBinoResults.cpp" />
+		<Unit filename="printOgive.cpp" />
+		<Unit filename="printPieChart.cpp" />
+		<Unit filename="printPoissionResults.cpp" />
+		<Unit filename="printScatterDiagram.cpp" />
+		<Unit filename="probabilityMenu.cpp" />
+		<Unit filename="qt_calculator.cpp" />
+		<Unit filename="sb1_calculator.cpp" />
+		<Unit filename="sum.cpp" />
+		<Unit filename="sum_square.cpp" />
+		<Unit filename="unGroupToGroupConverter.cpp" />
+		<Unit filename="unGroupToGroupMenu.cpp" />
+		<Unit filename="variance_calculator.cpp" />
+		<Extensions>
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
