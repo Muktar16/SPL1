@@ -52,6 +52,7 @@ void RegPrintResults(double *X,double *Y,double *XY ,int n);
 void printScatterDiagram(double* X,double *Y,int n,double r);
 double sb1_calculator(double* X,double* Y,int n);
 
+//Probability Distribution related functions
 void probabilityMenu();
 void binomial_distribution();
 void printBinoResults(int n,float p,int X,int sign);
@@ -67,9 +68,6 @@ float hyperGeoProbCalculator(float N,float k,float n,float x);
 void neg_bio_dis();
 float calculate_neg_bino_prob(int n,int X,float P);
 void printNegBinoResults(int n,float p,int X,int sign);
-//void intermediateMenu();
-
-//void graphMenu();
 
 void formulaSheetsMenu();
-//void read_file(char *filename);
+

@@ -49,7 +49,6 @@
 		<Unit filename="geometric_distribution.cpp" />
 		<Unit filename="getGrString.cpp" />
 		<Unit filename="gmean_calculator.cpp" />
-		<Unit filename="graphMenu.cpp" />
 		<Unit filename="group_gmean_calculator.cpp" />
 		<Unit filename="group_hmean_calculator.cpp" />
 		<Unit filename="group_mean_claculator.cpp" />

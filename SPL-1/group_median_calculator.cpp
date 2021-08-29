@@ -3,6 +3,7 @@ double group_median_calculator(double *LB,double *UB,int *F,int n,int q)
 {
     int N=0,cF[n];
     cF[-1]=0;
+    //calculate cumulative frequency and sample size
     for(int i=0;i<n;i++)
     {
         N+=F[i];

@@ -31,7 +31,7 @@ void main_menu()
     outtextxy(315,285,"GROUPED DATA");
     outtextxy(255,385,"UNGROUPED TO GROUPED");
     outtextxy(295,415,"DATA CONVERTER");
-    outtextxy(810,185,"REGRESSION & CO-RELATION");
+    outtextxy(810,185,"REGRESSION & CORRELATION");
     outtextxy(800,285,"PROBABILITY DISTRIBUTION");
     outtextxy(880,395,"FORMULA SHEETS");
     setcolor(RED);

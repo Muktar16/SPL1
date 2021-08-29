@@ -3,14 +3,14 @@
 
 void printHistogram(double *LB,double *UB,int *F,int n)
 {
-      //initialize a window
+    //initialize a window
     initGraph("Histogram/Bar diagram window",0,0,-3,-3);
     settextstyle(10,HORIZ_DIR,5);
     setcolor(10);
     outtextxy(400,5,"Histogram(Bar Diagram)");//heading
 
 
-    //calculating class midvalue and finding maximum frequency
+    //calculating class mid-value and finding maximum frequency
     int maxF=0;
     double MidPoint[n];
     for(int i=0;i<n;i++)

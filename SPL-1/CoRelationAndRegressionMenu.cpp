@@ -9,8 +9,8 @@ void CoRelationAndRegressionMenu()
 
     initGraph("Input data window for Co-relation and Regression",0,0,-3,-3);
     setcolor(11);
-
     moveto(0,0);
+
     newLine();
     outtext("Enter values of class X separated with comma: ");
     newLine();

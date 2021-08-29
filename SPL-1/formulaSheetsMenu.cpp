@@ -24,15 +24,16 @@ void formulaSheetsMenu()
         setcolor(LIGHTBLUE);
         //button texts
         settextstyle(BOLD_FONT,HORIZ_DIR,2);
-        outtextxy(505,110,"      UNGROUPED DATA");
-        outtextxy(505,180,"      GROUPED DATA");
-        outtextxy(505,250,"REGRESSION & CO-RELATION");
-        outtextxy(505,320,"PROBABILITY DISTRIBUTION");
-        outtextxy(505,390,"    BACK TO MAIN MENU");
+        outtextxy(505,110,"      UNGROUPED DATA");//button 1
+        outtextxy(505,180,"      GROUPED DATA");//button 2
+        outtextxy(505,250,"REGRESSION & CO-RELATION"); //button 3
+        outtextxy(505,320,"PROBABILITY DISTRIBUTION");//button 4
+        outtextxy(505,390,"    BACK TO MAIN MENU");//button 5
         setcolor(RED);
-        outtextxy(505,460,"          EXIT");
+        outtextxy(505,460,"          EXIT");//button 6
 
 
+        //
         POINT position;
         position.x=0;
         position.y=0;
@@ -47,7 +48,7 @@ void formulaSheetsMenu()
             if(x>=500&&x<=800 && y>=100&&y<=150)
             {
                 closegraph();
-                initGraph("Grouped Data Formula",870,850,300,0);
+                initGraph("Ungrouped Data Formula",870,850,300,0);
                 readimagefile("ungroupedData.jpg",0,0,870,830);
                 settextstyle(8,HORIZ_DIR,2);
                 setbkcolor(WHITE);
@@ -72,7 +73,7 @@ void formulaSheetsMenu()
             else if(x>=500&&x<=800 && y>=240&&y<=290)
             {
                 closegraph();
-                initGraph("Grouped Data Formula",870,850,300,0);
+                initGraph("Correlation & regression Formula",870,850,300,0);
                 readimagefile("correlation.jpg",0,0,870,830);
                 settextstyle(8,HORIZ_DIR,2);
                 setbkcolor(WHITE);
@@ -101,7 +102,8 @@ void formulaSheetsMenu()
             else if(x>=500&&x<=800 && y>=380&&y<=430)
             {
                 closegraph();
-                return;
+                main_menu();
+                //return;
                 break;
             }
             else if(x>=500&&x<=800 && y>=450&&y<=500)
